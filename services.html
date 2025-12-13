@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Samsonite Marble & Granite</title>
+    <meta name="description"
+        content="Premium marble & granite services including kitchen tops, altar tables, tombstones, engraving and more.">
+
+    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <link rel="shortcut icon" href="img/logooooo.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+    <!-- AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+            background-color: var(--bg);
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .border-gold {
+            border-color: var(--gold);
+        }
+
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(197, 161, 0, 0.1) 0%, rgba(11, 18, 32, 0.9) 100%);
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(197, 161, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+            box-shadow: 0 15px 30px rgba(197, 161, 0, 0.2);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(197, 161, 0, 0.1), transparent);
+            transition: left 0.7s;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .process-step {
+            position: relative;
+        }
+
+        .process-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -30px;
+            width: 60px;
+            height: 2px;
+            background: var(--gold);
+            transform: translateY(-50%);
+        }
+
+        @media (max-width: 768px) {
+            .process-step:not(:last-child)::after {
+                display: none;
+            }
+        }
+
+        .floating-shape {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .pulse-gold {
+            animation: pulse-gold 2s infinite;
+        }
+
+        @keyframes pulse-gold {
+            0% {
+                box-shadow: 0 0 0 0 rgba(197, 161, 0, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(197, 161, 0, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(197, 161, 0, 0);
+            }
+        }
+
+        .marble-bg {
+            background-image: url(watermarked_img/kitchentop0004.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .marble-overlay {
+            background: linear-gradient(to right, rgba(11, 18, 32, 0.9), rgba(11, 18, 32, 0.7));
+        }
+    </style>
+</head>
+
+<body class="= text-white">
+    <!-- Header / Navbar -->
+    <header class="bg-[var(--bg)] text-[var(--gold)] sticky z-50
+        ">
+        <div class="nav-inner flex justify-between items-center px-6 py-4">
+            <!-- Brand -->
+            <a href="#" class="flex items-center gap-3 brand" aria-label="Samsonite Marble & Granite">
+                <svg width="44" height="44" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                    <rect width="100" height="100" rx="15" fill="#0b1220" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="30"
+                        font-weight="bold" fill="#D4AF37">SMG</text>
+                </svg>
+                <div class="title text-lg font-semibold">SAMSONITE MARBLE &amp; GRANITE</div>
+            </a>
+
+            <!-- Desktop nav -->
+            <nav class="hidden lg:flex gap-8 items-center text-[var(--gold)] ">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-white transition">About Us</a>
+                <a href="services.html" class="hover:text-white transition">Services</a>
+
+                <!-- Desktop Shop dropdown -->
+                <div class="relative group">
+                    <button class="flex items-center gap-2 hover:text-white transition">
+                        Shop
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown grid -->
+                    <div class="absolute hidden group-hover:grid grid-cols-4 gap-3 bg-black/95 border border-[var(--gold)] text-[var(--gold)]
+          top-10 right-0 p-4 rounded-xl w-[600px] shadow-lg transition-all duration-200 ease-in-out opacity-0
+          group-hover:opacity-100 group-hover:visible z-50">
+                        <!-- 16 products -->
+                        <a href="kitchen.html" class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">
+                            Kitchen
+                            Top / Bar &
+                            Bank Top Counter
+                        </a>
+                        <a href="altar.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Altar
+                            Table
+                        </a>
+                        <a href="alter rail.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Altar rail
+                        </a>
+                        <a href="lectern.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Lectern / Altar
+                        </a>
+                        <a href="baptismal.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Baptismal
+                            Front
+                        </a>
+                        <a href="pulpit.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Pulpit
+                        </a>
+                        <a href="engraving.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Engraving
+                            and Dedication Stone
+                        </a>
+
+                        <a href="bishop.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Bishop's
+                            Throne
+                        </a>
+                        <a href="dining.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Tables
+
+                        </a>
+                        <a href="staircase.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Staircase
+                        </a>
+                        <a href="conductor.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Conductor's Table
+                        </a>
+                        <a href="granite.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Granite &
+                            Marble Slabs
+                        </a>
+
+                        <a href="tomb.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Tombstone
+                        </a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="hover:text-white transition">Contact</a>
+            </nav>
+
+            <!-- Right controls -->
+            <div class="flex items-center gap-3">
+                <div class="hidden md:block font-semibold">📞 <a href="tel:08037202816"
+                        class="text-[var(--gold)] hover:text-white transition">08037202816</a></div>
+                <a id="whatsapp-cta" href=""
+                    class="hidden md:inline-block border border-[var(--gold)] px-4 py-2 rounded hover:bg-[var(--gold)] hover:text-black transition">WhatsApp</a>
+
+                <!-- MOBILE hamburger -->
+                <button id="mobileMenuBtn" class="lg:hidden text-[var(--gold)] text-2xl"
+                    aria-label="Open menu">☰</button>
+            </div>
+        </div>
+
+        <!-- MOBILE DRAWER -->
+        <div id="mobileCanvas" class=" lg:hidden fixed top-0 right-[-100%] h-screen w-11/12 sm:w-3/4 bg-black text-[var(--gold)] shadow-lg p-6 z-[60]
+    transition-all duration-300 ease-in-out overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold">Menu</h2>
+                <button id="closeCanvas" class="text-3xl" aria-label="Close menu">&times;</button>
+            </div>
+
+            <nav class="flex flex-col gap-4">
+                <a href="index.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">Home</a>
+                <a href="about.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">About Us</a>
+                <a href="services.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">Services</a>
+
+                <!-- SHOP accordion -->
+                <div class="pt-2">
+                    <button id="mobileShopToggle"
+                        class="w-full flex items-center justify-between py-2 px-1 text-lg font-medium hover:border-[var(--gold)]"
+                        aria-expanded="false">
+                        <span>Shop</span>
+                        <svg id="mobileShopIcon" xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 transform transition-transform" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- SHOP GRID -->
+                    <div id="mobileShopPanel" class="mt-3 max-h-0 overflow-hidden transition-[max-height] duration-300">
+                        <div class="grid grid-cols-2 gap-3">
+                            <!-- 16 products -->
+
+                            <a href="kitchen.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">
+                                Kitchen
+                                Top / Bar &
+                                Bank Top Counter
+                            </a>
+                            <a href="altar.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Altar
+                                Table
+                            </a>
+                            <a href="alter rail.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Altar
+                                rail
+                            </a>
+                            <a href="lectern.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Lectern
+                                / Altar
+                            </a>
+                            <a href="baptismal.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Baptismal
+                                Front
+                            </a>
+                            <a href="pulpit.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Pulpit
+                            </a>
+                            <a href="engraving.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Engraving
+                                and Dedication Stone
+                            </a>
+                            <a href="bishop.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Bishop's
+                                Throne
+                            </a>
+                            <a href="dining.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Tables
+
+                            </a>
+                            <a href="staircase.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Staircase
+                            </a>
+                            <a href="conductor.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Conductor's
+                                Table
+                            </a>
+                            <a href="granite.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Granite
+                                &
+                                Marble Slabs
+                            </a>
+
+                            <a href="tomb.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3  rounded text-center transition">Tombstone
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">Contact</a>
+                    <div class="mt-4 border-t border-gray-800 pt-4">
+                        <a href="tel:08037202816" class="block py-2 text-sm">📞 08037202816</a>
+                        <a href="#" id="whatsapp-cta-mobile"
+                            class="inline-block mt-2 px-4 py-2 border border-[var(--gold)] rounded hover:bg-[var(--gold)] hover:text-black">
+                            WhatsApp
+                        </a>
+                    </div>
+            </nav>
+        </div>
+
+        <!-- Overlay -->
+        <div id="overlay"
+            class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-[55]">
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- Services Page Content -->
+    <main style="background-color: #0b1220;">
+        <!-- Hero Section -->
+        <section class="relative marble-bg pt-32 pb-20">
+            <div class="marble-overlay absolute inset-0"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-down">Our Premium Services</h1>
+                <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8" data-aos="fade-up"
+                    data-aos-delay="200">
+                    End-to-end stone services from consultation to installation with precision and artistry
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mt-10" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#services"
+                        class="bg-gold text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-600 transition transform hover:scale-105">
+                        Explore Services
+                    </a>
+                    <a href="contact.html"
+                        class="border border-gold text-gold font-semibold px-6 py-3 rounded-lg hover:bg-gold hover:text-black transition transform hover:scale-105">
+                        Get Quote
+                    </a>
+                </div>
+            </div>
+
+            <!-- Floating Shapes -->
+            <div class="floating-shape absolute top-20 left-10 w-20 h-20 bg-gold/20 rounded-full" data-aos="fade-right">
+            </div>
+            <div class="floating-shape absolute bottom-20 right-10 w-16 h-16 bg-gold/30 rounded-lg" data-aos="fade-left"
+                data-aos-delay="500"></div>
+            <div class="floating-shape absolute top-1/2 left-1/4 w-12 h-12 bg-gold/10 rounded-full" data-aos="zoom-in"
+                data-aos-delay="1000"></div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="py-16 px-6 bg-black/40">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6">Comprehensive Stone Solutions</h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        Samsonite Marble & Granite Company provides end-to-end stone services from initial consultation
+                        to final
+                        installation.
+                        Our expertise covers an array of stone applications with emphasis on accurate templating,
+                        precision
+                        fabrication and professional site installations.
+                    </p>
+                    <div class="mt-8 bg-gold/10 p-6 rounded-2xl border border-gold/20 max-w-4xl mx-auto">
+                        <p class="text-lg text-gold">
+                            <span class="text-3xl font-bold">O</span>ur workshop uses modern CNC cutting and polishing
+                            equipment
+                            combined with skilled hand-finishing to ensure each project meets the highest standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Services Grid -->
+                <div id="services" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-warehouse text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Importation & Sales</h3>
+                        <p class="text-gray-300 text-center mb-4">
+                            Importation and sales of marble, granite, quartz, and engineered stones from reliable
+                            international
+                            partners.
+                        </p>
+                        <ul class="text-gray-300 text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Premium quality materials
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Competitive pricing
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Wide variety of options
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-tools text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Fabrication & Customization</h3>
+                        <p class="text-gray-300 text-center mb-4">
+                            Fabrication and customization of counter-tops, tiles, stairs, wall panels, and bespoke stone
+                            furniture.
+                        </p>
+                        <ul class="text-gray-300 text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Precision cutting
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Custom designs
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Expert craftsmanship
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-church text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Church & Altar Works</h3>
+                        <p class="text-gray-300 text-center mb-4">
+                            Expertly crafted Bishop thrones, conductor stands, altar tables, pulpits, and baptismal
+                            fronts.
+                        </p>
+                        <ul class="text-gray-300 text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Sacred design expertise
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Durable materials
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Traditional & modern styles
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-utensils text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Kitchen & Bar Tops</h3>
+                        <p class="text-gray-300 text-center mb-4">
+                            Design and installation of elegant kitchen countertops and bar counters made from premium
+                            marble and
+                            granite.
+                        </p>
+                        <ul class="text-gray-300 text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Heat & stain resistant
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Easy maintenance
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Custom sizing
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-monument text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Memorials & Tombstones</h3>
+                        <p class="text-gray-300 text-center mb-4">
+                            Beautifully carved tombstones and memorials designed to reflect respect and remembrance.
+                        </p>
+                        <ul class="text-gray-300 text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Personalized designs
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Weather-resistant materials
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Expert engraving
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-layer-group text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Flooring & Terrazzo</h3>
+                        <p class="text-gray-300 text-center mb-4">
+                            Expert terrazzo, palladiana and granite flooring with unmatched smoothness and shine for
+                            various spaces.
+                        </p>
+                        <ul class="text-gray-300 text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Durable & long-lasting
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Slip-resistant options
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-gold mr-2"></i>
+                                Custom patterns & colors
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing & Operations Section -->
+        <section class="py-16 px-6 bg-black/60">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Marketing &
+                    Operations
+                    Plan</h2>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div data-aos="fade-right">
+                        <h3 class="text-2xl font-bold text-gold mb-6">Marketing Strategy</h3>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            Samosnite's marketing efforts will focus on strategic visibility, partnerships, and customer
+                            engagement
+                            through:
+                        </p>
+                        <ul class="text-gray-300 text-lg space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Professional exhibitions and real estate expos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Direct marketing to construction firms and developers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Targeted social media and online campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Referral incentives for architects and interior designers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Premium branding and showroom aesthetics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Innovated website (Under construction)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Other social media handles</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div data-aos="fade-left">
+                        <h3 class="text-2xl font-bold text-gold mb-6">Operations Management</h3>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            Each outlet will be managed by an experienced branch manager supported by:
+                        </p>
+                        <ul class="text-gray-300 text-lg space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Operations and fabrication supervisor</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Sales representatives and client service officers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Skilled artisans and installation teams</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Administrative and logistics staff</span>
+                            </li>
+                        </ul>
+                        <p class="text-gray-300 text-lg leading-relaxed mt-6">
+                            Central coordination will remain at the Port Harcourt head office, ensuring consistency in
+                            quality control
+                            and financial management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Analysis Section -->
+        <section class="py-16 px-6 bg-black/50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Financial
+                    Analysis
+                </h2>
+
+                <div class="bg-gold/10 p-8 rounded-2xl border border-gold/20" data-aos="zoom-in">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Loan Request & Utilization</h3>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-bold text-gold mb-4">Loan Details</h4>
+                            <ul class="text-gray-300 space-y-3">
+                                <li class="flex justify-between">
+                                    <span>Loan Amount:</span>
+                                    <span class="font-semibold">USD 135,000</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Interest Rate:</span>
+                                    <span class="font-semibold">3% per annum</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Loan Tenure:</span>
+                                    <span class="font-semibold">3 years</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Moratorium:</span>
+                                    <span class="font-semibold">1 year</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Repayment Period:</span>
+                                    <span class="font-semibold">2 years</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-bold text-gold mb-4">Funds Utilization</h4>
+                            <ul class="text-gray-300 space-y-3">
+                                <li class="flex justify-between">
+                                    <span>Outlet Renovation & Expansion:</span>
+                                    <span class="font-semibold">USD 35,000</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Machinery & Equipment:</span>
+                                    <span class="font-semibold">USD 30,000</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Inventory & Raw Materials:</span>
+                                    <span class="font-semibold">USD 25,000</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Vehicles & Logistics:</span>
+                                    <span class="font-semibold">USD 20,000</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Digital Marketing & Branding:</span>
+                                    <span class="font-semibold">USD 10,000</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Working Capital Reserve:</span>
+                                    <span class="font-semibold">USD 10,000</span>
+                                </li>
+                                <li class="flex justify-between border-t border-gold/30 pt-2">
+                                    <span class="font-bold">Total:</span>
+                                    <span class="font-bold">USD 135,000</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 grid md:grid-cols-2 gap-8">
+                    <div data-aos="fade-right">
+                        <h3 class="text-2xl font-bold text-gold mb-6">Financial Projections</h3>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            The expansion will increase visibility and sales capacity, driving a projected 55–65% growth
+                            in annual
+                            revenue within two years.
+                        </p>
+                        <div class="bg-black/40 p-6 rounded-2xl">
+                            <h4 class="text-xl font-bold text-white mb-4">Revenue Projections (USD)</h4>
+                            <ul class="text-gray-300 space-y-2">
+                                <li class="flex justify-between">
+                                    <span>Year 0 (Before Loan):</span>
+                                    <span class="font-semibold">210,000</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Year 1:</span>
+                                    <span class="font-semibold">320,000</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Year 2:</span>
+                                    <span class="font-semibold">415,000</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Year 3:</span>
+                                    <span class="font-semibold">460,000</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-left">
+                        <h3 class="text-2xl font-bold text-gold mb-6">Key Financial Strengths</h3>
+                        <ul class="text-gray-300 text-lg space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Proven profitability across all outlets</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Solid cash flow and repayment capacity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Attractive return on investment (above 40%)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-2">•</span>
+                                <span>Positive cumulative cash balance post-expansion</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 bg-black/40 p-6 rounded-2xl">
+                            <h4 class="text-xl font-bold text-white mb-4">Break-even Analysis</h4>
+                            <p class="text-gray-300">
+                                Fixed Costs: USD 72,000<br>
+                                Variable Cost Ratio: 60% of sales<br>
+                                Contribution Margin: 40%<br>
+                                Break-even Sales: USD 180,000 per annum<br>
+                                <span class="text-gold font-semibold">Projected to break even within first 6
+                                    months</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add -->
+            <div class="mt-12" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-gold mb-6">Detailed Financial Projections</h3>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-black/40 p-6 rounded-2xl">
+                        <h4 class="text-xl font-bold text-white mb-4">Repayment Schedule (USD)</h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-gray-300">
+                                <thead>
+                                    <tr class="border-b border-gold/30">
+                                        <th class="text-left py-2">Year</th>
+                                        <th class="text-right py-2">Interest</th>
+                                        <th class="text-right py-2">Principal</th>
+                                        <th class="text-right py-2">Total Payment</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-2">1</td>
+                                        <td class="text-right">4,050</td>
+                                        <td class="text-right">-</td>
+                                        <td class="text-right">4,050</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-2">2</td>
+                                        <td class="text-right">4,050</td>
+                                        <td class="text-right">67,500</td>
+                                        <td class="text-right">71,550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2">3</td>
+                                        <td class="text-right">2,025</td>
+                                        <td class="text-right">67,500</td>
+                                        <td class="text-right">69,525</td>
+                                    </tr>
+                                    <tr class="border-t border-gold/30 font-bold">
+                                        <td class="py-2">Total</td>
+                                        <td class="text-right">10,125</td>
+                                        <td class="text-right">135,000</td>
+                                        <td class="text-right">145,125</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/40 p-6 rounded-2xl">
+                        <h4 class="text-xl font-bold text-white mb-4">Financial Ratios</h4>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-gray-300">
+                                <thead>
+                                    <tr class="border-b border-gold/30">
+                                        <th class="text-left py-2">Ratio</th>
+                                        <th class="text-right py-2">Year 2</th>
+                                        <th class="text-right py-2">Year 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-2">Net Profit Margin</td>
+                                        <td class="text-right">12.9%</td>
+                                        <td class="text-right">14.4%</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-2">Return on Investment</td>
+                                        <td class="text-right">39.7%</td>
+                                        <td class="text-right">49.1%</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-2">Current Ratio</td>
+                                        <td class="text-right">1.7</td>
+                                        <td class="text-right">2.1</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-2">Debt Service Coverage Ratio</td>
+                                        <td class="text-right">0.54</td>
+                                        <td class="text-right">0.74</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2">Interest Coverage</td>
+                                        <td class="text-right">23x</td>
+                                        <td class="text-right">83x</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risk Analysis Section -->
+        <section class="py-16 px-6 bg-black/60">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Risk Analysis
+                    &
+                    Mitigation</h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20" data-aos="zoom-in">
+                        <h3 class="text-xl font-bold text-white mb-4">Market Fluctuations</h3>
+                        <p class="text-gray-300 mb-4">Variations in construction demand</p>
+                        <h4 class="text-lg font-bold text-gold mb-2">Mitigation Strategy</h4>
+                        <p class="text-gray-300">Diversify client base and expand B2C retail sales</p>
+                    </div>
+
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <h3 class="text-xl font-bold text-white mb-4">Exchange Rate Volatility</h3>
+                        <p class="text-gray-300 mb-4">Imported materials cost risk</p>
+                        <h4 class="text-lg font-bold text-gold mb-2">Mitigation Strategy</h4>
+                        <p class="text-gray-300">Negotiate long-term supplier contracts</p>
+                    </div>
+
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <h3 class="text-xl font-bold text-white mb-4">Operational Delays</h3>
+                        <p class="text-gray-300 mb-4">Possible setup or logistics issues</p>
+                        <h4 class="text-lg font-bold text-gold mb-2">Mitigation Strategy</h4>
+                        <p class="text-gray-300">Effective project management and local sourcing</p>
+                    </div>
+
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20" data-aos="zoom-in"
+                        data-aos-delay="300">
+                        <h3 class="text-xl font-bold text-white mb-4">Competition</h3>
+                        <p class="text-gray-300 mb-4">Emerging local fabricators</p>
+                        <h4 class="text-lg font-bold text-gold mb-2">Mitigation Strategy</h4>
+                        <p class="text-gray-300">Strengthen brand presence and quality differentiation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add  -->
+        <section class="py-16 px-6 bg-black/50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Conclusion &
+                    Loan Repayment Plan</h2>
+
+                <div class="bg-gold/10 p-8 rounded-2xl border border-gold/20" data-aos="fade-up">
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Samosnite Marble & Granite Limited has demonstrated resilience, innovation, and consistent
+                        profitability for over a decade.
+                        The proposed expansion represents a strategically sound investment supported by clear market
+                        demand, strong management capacity,
+                        and a well-defined financial plan.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        The N200 million (135,000 USD) investment will enable the company to achieve higher revenue
+                        growth, stronger brand positioning,
+                        and improved operational efficiency. Based on projected performance, the company anticipates a
+                        full loan repayment within three
+                        years post-moratorium, supported by stable cash flow from expanded operations.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        This expansion will not only consolidate Samsonite's leadership in Nigeria's marble and granite
+                        market but also deliver sustainable
+                        returns to investors while contributing meaningfully to local economic development.
+                    </p>
+
+                    <div class="mt-8 pt-6 border-t border-gold/20">
+                        <p class="text-gold text-lg font-semibold">Thank you.</p>
+                        <p class="text-white text-xl font-bold mt-4">IDAHA SAMSON</p>
+                        <p class="text-gold">(Managing Director/CEO)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social & Economic Impact Section -->
+        <section class="py-16 px-6 bg-gold text-black">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Social & Economic Impact
+                </h2>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white/90 p-6 rounded-2xl shadow-lg text-center" data-aos="zoom-in">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-briefcase text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Job Creation</h3>
+                        <p class="text-gray-700">Over 40 new direct jobs across three outlets</p>
+                    </div>
+
+                    <div class="bg-white/90 p-6 rounded-2xl shadow-lg text-center" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-industry text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Local Sourcing</h3>
+                        <p class="text-gray-700">Encouragement of Nigerian marble suppliers and artisans</p>
+                    </div>
+
+                    <div class="bg-white/90 p-6 rounded-2xl shadow-lg text-center" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-graduation-cap text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Skill Development</h3>
+                        <p class="text-gray-700">Training programs for technicians and installers</p>
+                    </div>
+
+                    <div class="bg-white/90 p-6 rounded-2xl shadow-lg text-center" data-aos="zoom-in"
+                        data-aos-delay="300">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-handshake text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Community Development</h3>
+                        <p class="text-gray-700">CSR projects in host communities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-16 px-6 bg-black/60">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Our Process
+                </h2>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="process-step text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto pulse-gold">
+                            <span class="text-gold text-2xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Consultation</h3>
+                        <p class="text-gray-300">We discuss your needs, preferences, and project requirements to
+                            understand your
+                            vision.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto pulse-gold">
+                            <span class="text-gold text-2xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Material Selection</h3>
+                        <p class="text-gray-300">Choose from our wide range of premium marble, granite, and engineered
+                            stones.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto pulse-gold">
+                            <span class="text-gold text-2xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Fabrication</h3>
+                        <p class="text-gray-300">Our skilled craftsmen precision-cut and finish your stone pieces with
+                            modern
+                            equipment.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="process-step text-center" data-aos="fade-up" data-aos-delay="400">
+                        <div
+                            class="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto pulse-gold">
+                            <span class="text-gold text-2xl font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Installation</h3>
+                        <p class="text-gray-300">Professional installation by our experienced team ensures perfect
+                            results every
+                            time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-16 px-6 bg-gold text-black">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Why Choose Samsonite?
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white/90 p-6 rounded-2xl shadow-lg text-center" data-aos="zoom-in">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-award text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">16+ Years Experience</h3>
+                        <p class="text-gray-700">Over a decade and a half of expertise in marble and granite
+                            craftsmanship.</p>
+                    </div>
+                    <div class="bg-white/90 p-6 rounded-2xl shadow-lg text-center" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-users text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">500+ Projects</h3>
+                        <p class="text-gray-700">Successful completion of residential, commercial, and sacred projects.
+                        </p>
+                    </div>
+                    <div class="bg-white/90 p-6 rounded-2xl shadow-lg text-center" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-shield-alt text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Quality Guarantee</h3>
+                        <p class="text-gray-700">We stand behind our work with a commitment to excellence and customer
+                            satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Financial Tables Section -->
+        <section class="py-16 px-6 bg-black/50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Detailed
+                    Financial Analysis</h2>
+
+                <!-- Repayment Schedule -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-gold mb-6">Repayment Schedule</h3>
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20">
+                        <h4 class="text-xl font-bold text-white mb-4">6.3.2 Years 2–3 (Principal + Interest)</h4>
+                        <p class="text-gray-300 mb-4">Equal annual principal repayment of USD 67,500 for 2 years.</p>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-gray-300 border-collapse">
+                                <thead>
+                                    <tr class="border-b border-gold/30">
+                                        <th class="text-left py-3 px-4">Year</th>
+                                        <th class="text-right py-3 px-4">Opening Balance</th>
+                                        <th class="text-right py-3 px-4">Interest (3%)</th>
+                                        <th class="text-right py-3 px-4">Principal Repaid</th>
+                                        <th class="text-right py-3 px-4">Total Payment</th>
+                                        <th class="text-right py-3 px-4">Closing Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">1</td>
+                                        <td class="text-right">135,000</td>
+                                        <td class="text-right">4,050</td>
+                                        <td class="text-right">-</td>
+                                        <td class="text-right">4,050</td>
+                                        <td class="text-right">135,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">2</td>
+                                        <td class="text-right">135,000</td>
+                                        <td class="text-right">4,050</td>
+                                        <td class="text-right">67,500</td>
+                                        <td class="text-right">71,550</td>
+                                        <td class="text-right">67,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4">3</td>
+                                        <td class="text-right">67,500</td>
+                                        <td class="text-right">2,025</td>
+                                        <td class="text-right">67,500</td>
+                                        <td class="text-right">69,525</td>
+                                        <td class="text-right">0</td>
+                                    </tr>
+                                    <tr class="border-t border-gold/30 font-bold">
+                                        <td class="py-3 px-4">Total</td>
+                                        <td class="text-right"></td>
+                                        <td class="text-right">10,125</td>
+                                        <td class="text-right">135,000</td>
+                                        <td class="text-right">145,125</td>
+                                        <td class="text-right"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-gray-300 mt-4"><strong>Total Interest Payable:</strong> USD 10,125</p>
+                        <p class="text-gray-300"><strong>Total Loan Obligation:</strong> USD 145,125</p>
+                    </div>
+                </div>
+
+                <!-- Revenue Projections -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-gold mb-6">6.3.5 Projected Financial Performance</h3>
+                    <h4 class="text-xl font-bold text-white mb-4">6.3.5.1 Revenue Projections by Branch (USD)</h4>
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-gray-300 border-collapse">
+                                <thead>
+                                    <tr class="border-b border-gold/30">
+                                        <th class="text-left py-3 px-4">Branch</th>
+                                        <th class="text-right py-3 px-4">Current Annual Revenue</th>
+                                        <th class="text-right py-3 px-4">Post-Expansion Year 1</th>
+                                        <th class="text-right py-3 px-4">Year 2</th>
+                                        <th class="text-right py-3 px-4">Year 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Head Office</td>
+                                        <td class="text-right">80,000</td>
+                                        <td class="text-right">120,000</td>
+                                        <td class="text-right">145,000</td>
+                                        <td class="text-right">160,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Branch A</td>
+                                        <td class="text-right">50,000</td>
+                                        <td class="text-right">75,000</td>
+                                        <td class="text-right">100,000</td>
+                                        <td class="text-right">110,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Branch B</td>
+                                        <td class="text-right">45,000</td>
+                                        <td class="text-right">70,000</td>
+                                        <td class="text-right">90,000</td>
+                                        <td class="text-right">100,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4">Branch C</td>
+                                        <td class="text-right">35,000</td>
+                                        <td class="text-right">55,000</td>
+                                        <td class="text-right">80,000</td>
+                                        <td class="text-right">90,000</td>
+                                    </tr>
+                                    <tr class="border-t border-gold/30 font-bold">
+                                        <td class="py-3 px-4">Total Revenue</td>
+                                        <td class="text-right">210,000</td>
+                                        <td class="text-right">320,000</td>
+                                        <td class="text-right">415,000</td>
+                                        <td class="text-right">460,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-gray-300 mt-4">The expansion will increase visibility and sales capacity, driving
+                            a projected 55–65% growth in annual revenue within two years.</p>
+                    </div>
+                </div>
+
+                <!-- Consolidated Income Statement -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h4 class="text-xl font-bold text-white mb-4">6.3.5.2 Consolidated Income Statement (USD)</h4>
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-gray-300 border-collapse">
+                                <thead>
+                                    <tr class="border-b border-gold/30">
+                                        <th class="text-left py-3 px-4">Category</th>
+                                        <th class="text-right py-3 px-4">Year 0 (Before Loan)</th>
+                                        <th class="text-right py-3 px-4">Year 1</th>
+                                        <th class="text-right py-3 px-4">Year 2</th>
+                                        <th class="text-right py-3 px-4">Year 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Revenue</td>
+                                        <td class="text-right">210,000</td>
+                                        <td class="text-right">320,000</td>
+                                        <td class="text-right">415,000</td>
+                                        <td class="text-right">460,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Cost of Goods Sold (COGS)</td>
+                                        <td class="text-right">126,000</td>
+                                        <td class="text-right">192,000</td>
+                                        <td class="text-right">249,000</td>
+                                        <td class="text-right">276,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10 font-bold">
+                                        <td class="py-3 px-4">Gross Profit</td>
+                                        <td class="text-right">84,000</td>
+                                        <td class="text-right">128,000</td>
+                                        <td class="text-right">166,000</td>
+                                        <td class="text-right">184,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Operating Expenses</td>
+                                        <td class="text-right">50,000</td>
+                                        <td class="text-right">72,000</td>
+                                        <td class="text-right">88,000</td>
+                                        <td class="text-right">92,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10 font-bold">
+                                        <td class="py-3 px-4">EBITDA</td>
+                                        <td class="text-right">34,000</td>
+                                        <td class="text-right">56,000</td>
+                                        <td class="text-right">78,000</td>
+                                        <td class="text-right">92,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Depreciation</td>
+                                        <td class="text-right">4,000</td>
+                                        <td class="text-right">6,000</td>
+                                        <td class="text-right">8,000</td>
+                                        <td class="text-right">8,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10 font-bold">
+                                        <td class="py-3 px-4">EBIT</td>
+                                        <td class="text-right">30,000</td>
+                                        <td class="text-right">50,000</td>
+                                        <td class="text-right">70,000</td>
+                                        <td class="text-right">84,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Loan Interest</td>
+                                        <td class="text-right">0</td>
+                                        <td class="text-right">4,050</td>
+                                        <td class="text-right">3,038</td>
+                                        <td class="text-right">1,013</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10 font-bold">
+                                        <td class="py-3 px-4">Profit Before Tax (PBT)</td>
+                                        <td class="text-right">30,000</td>
+                                        <td class="text-right">45,950</td>
+                                        <td class="text-right">66,962</td>
+                                        <td class="text-right">82,987</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Tax (20%)</td>
+                                        <td class="text-right">6,000</td>
+                                        <td class="text-right">9,190</td>
+                                        <td class="text-right">13,392</td>
+                                        <td class="text-right">16,597</td>
+                                    </tr>
+                                    <tr class="font-bold">
+                                        <td class="py-3 px-4">Net Profit After Tax</td>
+                                        <td class="text-right">24,000</td>
+                                        <td class="text-right">36,760</td>
+                                        <td class="text-right">53,570</td>
+                                        <td class="text-right">66,390</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cash Flow Forecast -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-gold mb-6">6.4 Cash Flow Forecast (USD)</h3>
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-gray-300 border-collapse">
+                                <thead>
+                                    <tr class="border-b border-gold/30">
+                                        <th class="text-left py-3 px-4">Item</th>
+                                        <th class="text-right py-3 px-4">Year 1</th>
+                                        <th class="text-right py-3 px-4">Year 2</th>
+                                        <th class="text-right py-3 px-4">Year 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Net Profit After Tax</td>
+                                        <td class="text-right">36,760</td>
+                                        <td class="text-right">53,570</td>
+                                        <td class="text-right">66,390</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Add: Depreciation</td>
+                                        <td class="text-right">6,000</td>
+                                        <td class="text-right">8,000</td>
+                                        <td class="text-right">8,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Less: Loan Repayments</td>
+                                        <td class="text-right">(4,050)</td>
+                                        <td class="text-right">(71,550)</td>
+                                        <td class="text-right">(69,525)</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10 font-bold">
+                                        <td class="py-3 px-4">Net Cash Flow</td>
+                                        <td class="text-right">38,710</td>
+                                        <td class="text-right">(9,980)</td>
+                                        <td class="text-right">4,865</td>
+                                    </tr>
+                                    <tr class="font-bold">
+                                        <td class="py-3 px-4">Cumulative Cash Flow</td>
+                                        <td class="text-right">38,710</td>
+                                        <td class="text-right">28,730</td>
+                                        <td class="text-right">33,595</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-gray-300 mt-4">Despite heavy repayment periods in Years 2–3, positive cumulative
+                            cash flow is maintained, ensuring loan serviceability.</p>
+                    </div>
+                </div>
+
+                <!-- Financial Ratios -->
+                <div class="mb-12" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-gold mb-6">6.6 Financial Ratios</h3>
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-gray-300 border-collapse">
+                                <thead>
+                                    <tr class="border-b border-gold/30">
+                                        <th class="text-left py-3 px-4">Ratio</th>
+                                        <th class="text-left py-3 px-4">Formula</th>
+                                        <th class="text-right py-3 px-4">Year 2</th>
+                                        <th class="text-right py-3 px-4">Year 3</th>
+                                        <th class="text-left py-3 px-4">Interpretation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Net Profit Margin</td>
+                                        <td class="py-3 px-4">NP / Sales</td>
+                                        <td class="text-right">12.9%</td>
+                                        <td class="text-right">14.4%</td>
+                                        <td class="py-3 px-4">Strong profitability</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Return on Investment</td>
+                                        <td class="py-3 px-4">NP / Total Investment</td>
+                                        <td class="text-right">39.7%</td>
+                                        <td class="text-right">49.1%</td>
+                                        <td class="py-3 px-4">Excellent ROI</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Current Ratio</td>
+                                        <td class="py-3 px-4">Current Assets / Liabilities</td>
+                                        <td class="text-right">1.7</td>
+                                        <td class="text-right">2.1</td>
+                                        <td class="py-3 px-4">Healthy liquidity</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Debt Service Coverage Ratio (DSCR)</td>
+                                        <td class="py-3 px-4">CF / Debt Payment</td>
+                                        <td class="text-right">0.54</td>
+                                        <td class="text-right">0.74</td>
+                                        <td class="py-3 px-4">Satisfactory & improving</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4">Interest Coverage</td>
+                                        <td class="py-3 px-4">EBIT / Interest</td>
+                                        <td class="text-right">23x</td>
+                                        <td class="text-right">83x</td>
+                                        <td class="py-3 px-4">High coverage ability</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sensitivity Analysis -->
+                <div data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-gold mb-6">6.7 Sensitivity Analysis</h3>
+                    <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-gray-300 border-collapse">
+                                <thead>
+                                    <tr class="border-b border-gold/30">
+                                        <th class="text-left py-3 px-4">Scenario</th>
+                                        <th class="text-left py-3 px-4">Change in Sales</th>
+                                        <th class="text-left py-3 px-4">Profit Impact</th>
+                                        <th class="text-left py-3 px-4">Loan Repayment Feasibility</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Optimistic</td>
+                                        <td class="py-3 px-4">+25%</td>
+                                        <td class="py-3 px-4">+30%</td>
+                                        <td class="py-3 px-4">Easily serviceable</td>
+                                    </tr>
+                                    <tr class="border-b border-gold/10">
+                                        <td class="py-3 px-4">Moderate (Base Case)</td>
+                                        <td class="py-3 px-4">0%</td>
+                                        <td class="py-3 px-4">0%</td>
+                                        <td class="py-3 px-4">Comfortable</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4">Pessimistic</td>
+                                        <td class="py-3 px-4">–15%</td>
+                                        <td class="py-3 px-4">–20%</td>
+                                        <td class="py-3 px-4">Still serviceable via cost adjustment</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-gray-300 mt-4">Even under a 15% sales decline, the company maintains sufficient
+                            margin to meet repayment obligations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financing Recommendation Section -->
+        <section class="py-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Financing
+                    Recommendation</h2>
+                <div class="bg-gold/10 p-8 rounded-2xl border border-gold/20" data-aos="fade-up">
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        The Marble Marketing and Installation Company demonstrates strong financial health, solid growth
+                        potential, and prudent management. The requested loan of <strong>USD 135,000</strong> at
+                        <strong>3% per annum</strong> will enable the company to <strong>expand its 4 branches</strong>,
+                        increase market coverage, and optimize operational efficiency.
+                    </p>
+
+                    <h3 class="text-2xl font-bold text-white mb-4">Key Financial Strengths</h3>
+                    <ul class="text-gray-300 text-lg space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-gold mr-2">•</span>
+                            <span>Proven profitability across all outlets</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-2">•</span>
+                            <span>Solid cash flow and repayment capacity</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-2">•</span>
+                            <span>Attractive return on investment (above 40%)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gold mr-2">•</span>
+                            <span>Positive cumulative cash balance post-expansion</span>
+                        </li>
+                    </ul>
+
+                    <div class="bg-black/40 p-6 rounded-2xl border border-gold/20">
+                        <p class="text-gold text-lg font-bold text-center">
+                            N.B: Approval of the loan request is strongly advised. The business model, supported by
+                            realistic projections and sound management, ensures repayment sustainability and measurable
+                            economic value creation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="py-16 px-6 bg-gold text-black">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Conclusion and Loan
+                    Repayment Plan</h2>
+                <div class="bg-white/90 p-8 rounded-2xl shadow-lg" data-aos="fade-up">
+                    <p class="text-gray-800 text-lg leading-relaxed mb-6">
+                        Samosnite Marble & Granite Limited has demonstrated resilience, innovation, and consistent
+                        profitability for over a decade. The proposed expansion represents a strategically sound
+                        investment supported by clear market demand, strong management capacity, and a well-defined
+                        financial plan.
+                    </p>
+                    <p class="text-gray-800 text-lg leading-relaxed mb-6">
+                        The N200 million (135,000 USD) investment will enable the company to achieve
+                        higher revenue growth, stronger brand positioning, and improved operational
+                        efficiency. Based on projected performance, the company anticipates a full loan
+                        repayment within three years post-moratorium, supported by stable cash flow from
+                        expanded operations.
+                    </p>
+                    <p class="text-gray-800 text-lg leading-relaxed mb-8">
+                        This expansion will not only consolidate Samsonite's leadership in Nigeria's marble
+                        and granite market but also deliver sustainable returns to investors while
+                        contributing meaningfully to local economic development.
+                    </p>
+
+                    <div class="text-center border-t border-gold/30 pt-6">
+                        <p class="text-black text-lg font-semibold">Thank you.</p>
+                        <p class="text-black text-xl font-bold mt-4">IDAHA SAMSON</p>
+                        <p class="text-gray-700">(Managing Director/CEO)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-6 bg-white">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6">Ready to Transform Your Space?</h2>
+                <p class="text-xl text-black/80 mb-8">Contact us today for a free consultation and quote on your marble
+                    or
+                    granite project.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://wa.me/2348037202816" target="_blank"
+                        class="bg-gold text-black font-semibold px-8 py-4 rounded-lg hover:bg-yellow-600 transition transform hover:scale-105 flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                    <a href="tel:08037202816"
+                        class="border border-gold text-gold font-semibold px-8 py-4 rounded-lg hover:bg-gold hover:text-black transition transform hover:scale-105 flex items-center gap-2">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h4 style="margin-bottom:6px">Samsonite Marble &amp; Granite</h4>
+                <p style="color:var(--muted);margin:0 0 8px 0">Premium marble &amp; granite memorials, kitchen tops,
+                    altar tables, engraving and bespoke stone furniture. Care and precision in every project.</p>
+                <div style="margin-top:10px;color:var(--muted)">
+                    <div><strong>Phone:</strong> <a href="tel:08037202816">08037202816</a></div>
+                    <div><strong>Email:</strong> <a href="Samsonitemarble62@yahoo.com">Samsonitemarble62@yahoo.com</a>
+                    </div>
+                    <div><strong>Address:</strong> 307 aba road rumukrushi bus stop aba road opposite access bank</div>
+                </div>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom:6px">Quick Links</h4>
+                <ul style="list-style:none;padding:0;margin:0;color:var(--muted)">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html">shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom:6px">Business Hours</h4>
+                <p style="color:var(--muted);margin:0">Mon — Sat: 8:00 AM — 6:00 PM</p>
+                <p style="color:var(--muted);margin:0">Sunday: By appointment</p>
+                <div style="margin-top:10px;color:var(--muted)">Follow us: Facebook • Instagram • WhatsApp</div>
+            </div>
+        </div>
+
+        <div
+            style="max-width:1200px;margin:18px auto 0 auto;border-top:1px solid rgba(255,255,255,0.04);padding-top:12px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;align-items:center">
+            <div>© <span id="year"></span> Samsonite Marble &amp; Granite. All rights reserved.</div>
+            <div>Privacy • Terms</div>
+        </div>
+    </footer>
+
+
+    <!-- Floating WhatsApp (Gold) -->
+    <a class="wa-float" id="waFloat"
+        href="#https://wa.me/2348037202816?text=Hello%20i%20will%20like%20to%speak%20the%20Mangement%20of%20Samsonite%20Marble%20Granite%20Company"
+        aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M20.5 3.5A11.9 11.9 0 0012 0C5.373 0 .5 4.873.5 11.5c0 2.028.536 4.02 1.553 5.77L0 24l6.964-1.79A11.922 11.922 0 0012 23.5c6.627 0 11.5-4.873 11.5-11.5 0-3.073-1.2-5.88-3.0-8.5zM12 21.5c-1.6 0-3.16-.36-4.56-1.05l-.33-.17-4.14 1.06 1.12-3.9-.22-.38A8.8 8.8 0 012.5 11.5C2.5 6.26 6.76 2 12 2s9.5 4.26 9.5 9.5S17.24 21.5 12 21.5z" />
+        </svg>
+        <span style="font-weight:800">Shop on WhatsApp</span>
+    </a>
+
+
+    <!-- Scripts -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileCanvas = document.getElementById('mobileCanvas');
+        const closeCanvas = document.getElementById('closeCanvas');
+        const overlay = document.getElementById('overlay');
+        const mobileShopToggle = document.getElementById('mobileShopToggle');
+        const mobileShopPanel = document.getElementById('mobileShopPanel');
+        const mobileShopIcon = document.getElementById('mobileShopIcon');
+
+        function openMobileMenu() {
+            mobileCanvas.style.right = '0';
+            overlay.style.opacity = '0.7';
+            overlay.style.pointerEvents = 'auto';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileCanvas.style.right = '-100%';
+            overlay.style.opacity = '0';
+            overlay.style.pointerEvents = 'none';
+            document.body.style.overflow = 'auto';
+            // Close shop panel when closing menu
+            mobileShopPanel.style.maxHeight = '0';
+            mobileShopIcon.style.transform = 'rotate(0deg)';
+            mobileShopToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        closeCanvas.addEventListener('click', closeMobileMenu);
+        overlay.addEventListener('click', closeMobileMenu);
+
+        // Mobile shop toggle
+        mobileShopToggle.addEventListener('click', () => {
+            const isExpanded = mobileShopToggle.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                mobileShopPanel.style.maxHeight = '0';
+                mobileShopIcon.style.transform = 'rotate(0deg)';
+                mobileShopToggle.setAttribute('aria-expanded', 'false');
+            } else {
+                mobileShopPanel.style.maxHeight = mobileShopPanel.scrollHeight + 'px';
+                mobileShopIcon.style.transform = 'rotate(180deg)';
+                mobileShopToggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+    </script>
+</body>
+
+</html>

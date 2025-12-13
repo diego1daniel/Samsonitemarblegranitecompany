@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SAMSONITE MARBLE & GRANITE COMPANY</title>
+    <meta name="description"
+        content="Samsonite Marble & Granite — kitchen tops, altar tables, tombstones, engraving and more." />
+    <!-- AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logooooo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader" class="loader-overlay" role="status" aria-label="Loading">
+        <div style="text-align:center">
+            <!-- SMG Logo spinning -->
+            <div class="logo-spin">
+                <svg width="92" height="92" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                    <rect width="100" height="100" rx="15" fill="#0b1220" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="40"
+                        font-weight="bold" fill="#D4AF37">SMG</text>
+                </svg>
+            </div>
+            <div style="margin-top:10px;font-weight:700;color:var(--bg)">SAMSONITE</div>
+        </div>
+    </div>
+
+    <!-- App container -->
+    <div id="app" style="display:none">
+
+        <!-- Header / Navbar -->
+        <header class="bg-[var(--bg)] text-[var(--gold)] sticky z-50
+        ">
+            <div class="nav-inner flex justify-between items-center px-6 py-4">
+                <!-- Brand -->
+                <a href="#" class="flex items-center gap-3 brand" aria-label="Samsonite Marble & Granite">
+                    <svg width="44" height="44" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                        <rect width="100" height="100" rx="15" fill="#0b1220" />
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="30"
+                            font-weight="bold" fill="#D4AF37">SMG</text>
+                    </svg>
+                    <div class="title text-lg font-semibold">SAMSONITE MARBLE &amp; GRANITE</div>
+                </a>
+
+                <!-- Desktop nav -->
+                <nav class="hidden lg:flex gap-8 items-center text-[var(--gold)] ">
+                    <a href="index.html" class="hover:text-white transition">Home</a>
+                    <a href="about.html" class="hover:text-white transition">About Us</a>
+                    <a href="services.html" class="hover:text-white transition">Services</a>
+
+                    <!-- Desktop Shop dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-2 hover:text-white transition">
+                            Shop
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown grid -->
+                        <div class="absolute hidden group-hover:grid grid-cols-4 gap-3 bg-black/95 border border-[var(--gold)] text-[var(--gold)]
+          top-10 right-0 p-4 rounded-xl w-[600px] shadow-lg transition-all duration-200 ease-in-out opacity-0
+          group-hover:opacity-100 group-hover:visible z-50">
+                            <!-- 16 products -->
+                            <a href="kitchen.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition"> Kitchen
+                                Top / Bar &
+                                Bank Top Counter
+                            </a>
+                            <a href="altar.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Altar
+                                Table
+                            </a>
+                            <a href="alter rail.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Altar rail
+                            </a>
+                            <a href="lectern.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Lectern / Altar
+                            </a>
+                            <a href="baptismal.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Baptismal
+                                Front
+                            </a>
+                            <a href="pulpit.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Pulpit
+                            </a>
+                            <a href="engraving.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Engraving
+                                and Dedication Stone
+                            </a>
+
+                            <a href="bishop.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Bishop's
+                                Throne
+                            </a>
+                            <a href="dining.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Tables
+
+                            </a>
+                            <a href="staircase.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Staircase
+                            </a>
+                            <a href="conductor.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Conductor's Table
+                            </a>
+                            <a href="granite.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Granite &
+                                Marble Slabs
+                            </a>
+
+                            <a href="tomb.html"
+                                class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Tombstone
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="hover:text-white transition">Contact</a>
+                </nav>
+
+                <!-- Right controls -->
+                <div class="flex items-center gap-3">
+                    <div class="hidden md:block font-semibold">📞 <a href="tel:08037202816"
+                            class="text-[var(--gold)] hover:text-white transition">08037202816</a></div>
+                    <a id="whatsapp-cta" href=""
+                        class="hidden md:inline-block border border-[var(--gold)] px-4 py-2 rounded hover:bg-[var(--gold)] hover:text-black transition">WhatsApp</a>
+
+                    <!-- MOBILE hamburger -->
+                    <button id="mobileMenuBtn" class="lg:hidden text-[var(--gold)] text-2xl"
+                        aria-label="Open menu">☰</button>
+                </div>
+            </div>
+
+            <!-- MOBILE DRAWER -->
+            <div id="mobileCanvas" class=" lg:hidden fixed top-0 right-[-100%] h-screen w-11/12 sm:w-3/4 bg-black text-[var(--gold)] shadow-lg p-6 z-[60]
+    transition-all duration-300 ease-in-out overflow-y-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold">Menu</h2>
+                    <button id="closeCanvas" class="text-3xl" aria-label="Close menu">&times;</button>
+                </div>
+
+                <nav class="flex flex-col gap-4">
+                    <a href="index.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">Home</a>
+                    <a href="about.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">About Us</a>
+                    <a href="services.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">Services</a>
+
+                    <!-- SHOP accordion -->
+                    <div class="pt-2">
+                        <button id="mobileShopToggle"
+                            class="w-full flex items-center justify-between py-2 px-1 text-lg font-medium hover:border-[var(--gold)]"
+                            aria-expanded="false">
+                            <span>Shop</span>
+                            <svg id="mobileShopIcon" xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 transform transition-transform" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- SHOP GRID -->
+                        <div id="mobileShopPanel"
+                            class="mt-3 max-h-0 overflow-hidden transition-[max-height] duration-300">
+                            <div class="grid grid-cols-2 gap-3">
+                                <!-- 16 products -->
+
+                                <a href="kitchen.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">
+                                    Kitchen
+                                    Top / Bar &
+                                    Bank Top Counter
+                                </a>
+                                <a href="altar.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Altar
+                                    Table
+                                </a>
+                                <a href="alter rail.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Altar
+                                    rail
+                                </a>
+                                <a href="lectern.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Lectern
+                                    / Altar
+                                </a>
+                                <a href="baptismal.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Baptismal
+                                    Front
+                                </a>
+                                <a href="pulpit.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Pulpit
+                                </a>
+                                <a href="engraving.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Engraving
+                                    and Dedication Stone
+                                </a>
+                                <a href="bishop.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Bishop's
+                                    Throne
+                                </a>
+                                <a href="dining.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Tables
+
+                                </a>
+                                <a href="staircase.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Staircase
+                                </a>
+                                <a href="conductor.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Conductor's
+                                    Table
+                                </a>
+                                <a href="granite.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Granite
+                                    &
+                                    Marble Slabs
+                                </a>
+
+                                <a href="tomb.html"
+                                    class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3  rounded text-center transition">Tombstone
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">Contact</a>
+                        <div class="mt-4 border-t border-gray-800 pt-4">
+                            <a href="tel:08037202816" class="block py-2 text-sm">📞 08037202816</a>
+                            <a href="#" id="whatsapp-cta-mobile"
+                                class="inline-block mt-2 px-4 py-2 border border-[var(--gold)] rounded hover:bg-[var(--gold)] hover:text-black">
+                                WhatsApp
+                            </a>
+                        </div>
+                </nav>
+            </div>
+
+            <!-- Overlay -->
+            <div id="overlay"
+                class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-[55]">
+            </div>
+        </header>
+
+        <!-- Enhanced Fullscreen Carousel (Hero) -->
+        <section id="home" class="carousel" aria-roledescription="carousel">
+            <div id="carouselTrack" class="carousel-track" role="list">
+                <!-- Slide 1 -->
+                <div class="slide active" role="listitem" style="background-image:url(img/logo12.jpg)">
+                    <div class="slide-content" data-aos="fade-up">
+                        <h1>SAMSONITE MARBLE &amp; GRANITE COMPANY</h1>
+                        <p>Leading Nigerian company specializing in importation, fabrication, supply, and installation
+                            <br>
+                            of premium marble, granite, and natural stone surfaces since 2009.
+                        </p>
+                        <div class="cta">
+                            <a href="#contact" class="btn-gold" onclick="openWhatsApp('General Inquiry')">Contact Us on
+                                WhatsApp</a>
+                            <a href="#featured" class="btn-outline">Explore Works</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide" role="listitem" style="background-image:url(img/tomb02.jpg)">
+                    <div class="slide-content" data-aos="fade-up" data-aos-delay="100">
+                        <h1>Premium Tombstones &amp; Memorials</h1>
+                        <p>Respectful craftsmanship with polished finishes and precise engraving.</p>
+                        <div class="cta">
+                            <a href="#contact" class="btn-gold" onclick="openWhatsApp('Tombstone Inquiry')">Contact Us
+                                on WhatsApp</a>
+                            <a href="#featured" class="btn-outline">See Tombstones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide" role="listitem" style="background-image:url(img/cr3.png)">
+                    <div class="slide-content" data-aos="fade-up" data-aos-delay="200">
+                        <h1>Kitchen Tops &amp; Countertops</h1>
+                        <p>Durable, elegant kitchen tops cut and finished to your design.</p>
+                        <div class="cta">
+                            <a href="#contact" class="btn-gold" onclick="openWhatsApp('Kitchen Top Inquiry')">Contact Us
+                                on WhatsApp</a>
+                            <a href="#featured" class="btn-outline">See Kitchen Tops</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide" role="listitem" style="background-image:url(img/TABLE2.jpg)">
+                    <div class="slide-content" data-aos="fade-up" data-aos-delay="300">
+                        <h1>Marble &amp; Granite Furniture</h1>
+                        <p>Center tables, dining tables and custom stone furniture with refined finishes.</p>
+                        <div class="cta">
+                            <a href="#contact" class="btn-gold" onclick="openWhatsApp('Furniture Inquiry')">Contact Us
+                                on WhatsApp</a>
+                            <a href="#featured" class="btn-outline">See Furniture</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="slide" role="listitem" style="background-image:url(img/pulpit012.jpg)">
+                    <div class="slide-content" data-aos="fade-up" data-aos-delay="400">
+                        <h1>Altar Tables &amp; Church Furnishings</h1>
+                        <p>Beautiful altar tables and bishop's thrones crafted with attention to detail.</p>
+                        <div class="cta">
+                            <a href="#contact" class="btn-gold" onclick="openWhatsApp('Altar Table Inquiry')">Contact Us
+                                on WhatsApp</a>
+                            <a href="#featured" class="btn-outline">See Altar Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- arrows -->
+            <button id="prevBtn" class="carousel-arrow arrow-left" aria-label="Previous slide">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m15 18-6-6 6-6" />
+                </svg>
+            </button>
+            <button id="nextBtn" class="carousel-arrow arrow-right" aria-label="Next slide">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m9 18 6-6-6-6" />
+                </svg>
+            </button>
+
+            <!-- dots -->
+            <div class="carousel-dots" id="carouselDots" aria-hidden="false"></div>
+
+            <!-- Progress bar -->
+            <div class="carousel-progress">
+                <div class="carousel-progress-bar"></div>
+            </div>
+        </section>
+
+        <!-- Company Overview Section -->
+        <section class="py-16 px-6 bg-black">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6">About Samsonite Marble & Granite</h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        Samosnite Marble & Granite Limited is a leading Nigerian company specializing in the
+                        importation, fabrication, supply, and installation of premium marble, granite, and natural stone
+                        surfaces. Established in 2009, we have built a strong reputation for quality, reliability, and
+                        craftsmanship in marble and granite projects across residential, commercial, and hospitality
+                        sectors.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFILE (directly under hero) -->
+        <section id="profile" class="profile-card reveal" data-aos="fade-up">
+            <div style="display:flex;flex-direction:column;gap:12px">
+                <h2 style="margin:0">Who We Are</h2>
+                <p style="margin:0;color:var(--muted);line-height:1.7">
+                    We deal on <strong>Kitchen Tops</strong>, <strong>Altar Tables</strong>, <strong>Bishop's
+                        Thrones</strong>, <strong>Conductor's Tables</strong>, <strong>Baptismal Fronts</strong>,
+                    <strong>Dedication Stones</strong>, <strong>Engraving (images &amp; write-ups)</strong>,
+                    <strong>Marble &amp; Granite Furniture</strong>, <strong>Center Tables</strong>, <strong>Dining
+                        Tables</strong>, <strong>Terrazzo Floors</strong>, <strong>Palladian Floors</strong>,
+                    <strong>Lecterns</strong>, <strong>Granite &amp; Marble Slabs</strong>, <strong>Bar &amp; Bank
+                        Countertops</strong>, <strong>Tombstones</strong>, <strong>Wall Claddings</strong>,
+                    <strong>Stair Steps</strong>, <strong>Customized Engravings</strong>, and more.
+                </p>
+                <p style="margin:0;color:var(--muted)">Each of these categories will have its own dedicated page with
+                    full galleries and details. Below are samples from our portfolio — tap any image to contact us about
+                    that product.</p>
+            </div>
+        </section>
+
+        <!-- SERVICE -->
+        <!-- Services Overview Section -->
+        <section class="py-16 px-6" style="background-color: #0b1220;">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Our Services
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="service-card bg-gold/5 p-6 rounded-2xl text-center" data-aos="zoom-in">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-warehouse text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Importation & Sales</h3>
+                        <p class="text-gray-300">Importation and sales of marble, granite, quartz, and engineered stones
+                            from reliable international partners.</p>
+                    </div>
+                    <div class="service-card bg-gold/5 p-6 rounded-2xl text-center" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-tools text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Fabrication & Customization</h3>
+                        <p class="text-gray-300">Fabrication and customization of counter-tops, tiles, stairs, wall
+                            panels, and bespoke stone furniture.</p>
+                    </div>
+                    <div class="service-card bg-gold/5 p-6 rounded-2xl text-center" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-church text-gold text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Church & Altar Works</h3>
+                        <p class="text-gray-300">Expertly crafted Bishop thrones, conductor stands, altar tables,
+                            pulpits, and baptismal fronts.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12" data-aos="fade-up">
+                    <a href="services.html"
+                        class="bg-gold text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-600 transition transform hover:scale-105">
+                        View All Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="featured" style="padding-top:8px">
+            <div class="gallery">
+                <!-- Real image 1 -->
+                <article class="card reveal" data-aos="zoom-in">
+                    <a href="tomb.html"><img loading="lazy" src="watermarked_img/heart1.jpg" alt="Grave Tomb Stone with Heart Head">
+</a>
+                    <div class="card-body">
+                        <div class="label">Grave Tomb Stone with Heart Head</div>
+                        <p>Black polished slab with heart-shaped headstone and engraving.</p>
+                        <div class="card-actions">
+                            <a class="btn" href="#" onclick="openWhatsApp('Grave Tomb Stone with Heart Head')">View on
+                                WhatsApp</a>
+                            <a class="btn" href="tel:08037202816">Call</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Real image 2 -->
+                <article class="card reveal" data-aos="zoom-in" data-aos-delay="80">
+                   <a href="pulpit.html"> <img loading="lazy" src="watermarked_img/pulpit02.jpg" alt="Grave Tomb Stone side view"></a>
+                    <div class="card-body">
+                        <div class="label">Foreign White Pulpit</div>
+                        <p>Pulpit Elegance</p>
+                        <div class="card-actions">
+                            <a class="btn" href="#" onclick="openWhatsApp('Grave Tomb Stone — Side View')">View on
+                                WhatsApp</a>
+                            <a class="btn" href="tel:08032577031">Call</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Real image 3 -->
+                <article class="card reveal" data-aos="zoom-in" data-aos-delay="160">
+                   <a href="granite.html"><img loading="lazy" src="watermarked_img/engraving3.jpg" alt="Grave Tomb Stone angle view"></a>
+                    <div class="card-body">
+                        <div class="label">Writing up and imagining on mabel/ granite</div>
+                        <p>Crafting Elegance from Stone — Marble, Granite & More</p>
+                        <div class="card-actions">
+                            <a class="btn" href="#" onclick="openWhatsApp('Grave Tomb Stone — Angle View')">View on
+                                WhatsApp</a>
+                            <a class="btn" href="tel:09064524107">Call</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sample image: Kitchen Top -->
+                <article class="card reveal" data-aos="zoom-in" data-aos-delay="220">
+                    <img loading="lazy" src="watermarked_img/kechen2.jpg" alt="Kitchen Top sample">
+                    <div class="card-body">
+                        <div class="label">Kitchen Top</div>
+                        <p>Custom kitchen tops in polished granite and marble.</p>
+                        <div class="card-actions">
+                            <a class="btn" href="#" onclick="openWhatsApp('Kitchen Top')">View on WhatsApp</a>
+                            <a class="btn" href="tel:08037202816">Call</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sample image: Altar Table -->
+                <article class="card reveal" data-aos="zoom-in" data-aos-delay="280">
+                    <a href="altar.html"><img loading="lazy" src="watermarked_img/altar19.jpg" alt="Altar Table sample"></a>
+                    <div class="card-body">
+                        <div class="label">Altar Table</div>
+                        <p>Custom altar table and bishop's thrones with fine engraving.</p>
+                        <div class="card-actions">
+                            <a class="btn" href="#" onclick="openWhatsApp('Altar Table')">View on WhatsApp</a>
+                            <a class="btn" href="tel:08032577031">Call</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sample image: Dining Table -->
+                <article class="card reveal" data-aos="zoom-in" data-aos-delay="340">
+                   <a href="dining.html"> <img loading="lazy" src="watermarked_img/TABLE1.jpg" alt="Dining Table sample"></a>
+                    <div class="card-body">
+                        <div class="label">Dining / Center Table</div>
+                        <p>Marble and granite furniture crafted to your design.</p>
+                        <div class="card-actions">
+                            <a class="btn" href="#" onclick="openWhatsApp('Dining Table')">View on WhatsApp</a>
+                            <a class="btn" href="tel:08037202816">Call</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sample image: Lecterns -->
+                <article class="card reveal" data-aos="zoom-in" data-aos-delay="400">
+                    <a href="lectern.html"><img loading="lazy" src="watermarked_img/lectarn2.jpg" alt="Floor sample"></a>
+                    <div class="card-body">
+                        <div class="label">Lecterns</div>
+                        <p>Ourlecterns combine timeless marble elegance with lasting strength for every sacred space.
+                        <div class="card-actions">
+                            <a class="btn" href="#" onclick="openWhatsApp('Terrazzo / Palladian Floor')">View on
+                                WhatsApp</a>
+                            <a class="btn" href="tel:08032577031">Call</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tombstones & Memorials -->
+                <article class="card reveal" data-aos="zoom-in" data-aos-delay="400">
+                    <img loading="lazy" src="watermarked_img/tomb02.jpg" alt="Floor sample">
+                    <div class="card-body">
+                        <div class="label">Tombstones & Memorials</div>
+                        <p>Honoring lives beautifully — each piece is a lasting tribute, carved with care and eternal
+                            craftsmanship..</p>
+                        <div class="card-actions">
+                            <a class="btn" href="#" onclick="openWhatsApp('Terrazzo / Palladian Floor')">View on
+                                WhatsApp</a>
+                            <a class="btn" href="tel:08032577031">Call</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ✅ ENHANCED TESTIMONIALS SECTION WITH ICONS -->
+        <section class="bg-black text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gold mb-10">What Our Clients Say</h2>
+
+                <div class="relative overflow-hidden">
+                    <div id="testimonial-carousel" class="flex transition-transform duration-700 ease-in-out">
+
+                        <!-- Testimonial 1 -->
+                        <div class="min-w-full flex flex-col items-center space-y-4 px-6">
+                            <div
+                                class="w-24 h-24 rounded-full border-4 border-gold bg-gold/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p class="text-lg italic max-w-2xl">
+                                "Their work is absolutely amazing! The quality and professionalism were outstanding."
+                            </p>
+                            <h4 class="text-gold font-semibold text-lg">— Sarah Johnson</h4>
+                            <p class="text-sm text-gray-400">Business Owner</p>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="min-w-full flex flex-col items-center space-y-4 px-6">
+                            <div
+                                class="w-24 h-24 rounded-full border-4 border-gold bg-gold/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p class="text-lg italic max-w-2xl">
+                                "I love how they transformed my ideas into something beyond my expectations!"
+                            </p>
+                            <h4 class="text-gold font-semibold text-lg">— Michael Brown</h4>
+                            <p class="text-sm text-gray-400">Interior Designer</p>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="min-w-full flex flex-col items-center space-y-4 px-6">
+                            <div
+                                class="w-24 h-24 rounded-full border-4 border-gold bg-gold/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p class="text-lg italic max-w-2xl">
+                                "Excellent craftsmanship and attention to detail. Highly recommended!"
+                            </p>
+                            <h4 class="text-gold font-semibold text-lg">— Chinedu Okafor</h4>
+                            <p class="text-sm text-gray-400">Project Manager</p>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="min-w-full flex flex-col items-center space-y-4 px-6">
+                            <div
+                                class="w-24 h-24 rounded-full border-4 border-gold bg-gold/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p class="text-lg italic max-w-2xl">
+                                "They delivered on time and with amazing results. I'm very satisfied with the service!"
+                            </p>
+                            <h4 class="text-gold font-semibold text-lg">— Amanda Lee</h4>
+                            <p class="text-sm text-gray-400">Construction Engineer</p>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="min-w-full flex flex-col items-center space-y-4 px-6">
+                            <div
+                                class="w-24 h-24 rounded-full border-4 border-gold bg-gold/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p class="text-lg italic max-w-2xl">
+                                "One of the best experiences I've had working with a professional team!"
+                            </p>
+                            <h4 class="text-gold font-semibold text-lg">— David Wilson</h4>
+                            <p class="text-sm text-gray-400">Architect</p>
+                        </div>
+
+                        <!-- Testimonial 6 -->
+                        <div class="min-w-full flex flex-col items-center space-y-4 px-6">
+                            <div
+                                class="w-24 h-24 rounded-full border-4 border-gold bg-gold/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p class="text-lg italic max-w-2xl">
+                                "Their designs are pure class. I'll definitely be recommending them to others!"
+                            </p>
+                            <h4 class="text-gold font-semibold text-lg">— Grace Thompson</h4>
+                            <p class="text-sm text-gray-400">Real Estate Agent</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add this to build trust -->
+        <section class="py-16 bg-black">
+            <div class="max-w-6xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12">Trusted By Industry Leaders</h2>
+                <div class="grid md:grid-cols-4 gap-8 text-gray-300">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Construction Companies</h3>
+                        <p>Bulk buyers for residential and commercial projects</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Real Estate Developers</h3>
+                        <p>Frequent demand for premium interior finishing</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Hospitality Industry</h3>
+                        <p>High demand for luxury aesthetics in hotels and resorts</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-2">Interior Designers</h3>
+                        <p>Regular clients for custom projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="py-16 px-6 bg-gold text-black">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Our Achievements</h2>
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div class="stat-card bg-white/90 p-6 rounded-2xl shadow-lg" data-aos="fade-up">
+                        <h3 class="text-4xl font-bold gold-text mb-2">16+</h3>
+                        <p class="font-semibold text-lg">Years Experience</p>
+                    </div>
+                    <div class="stat-card bg-white/90 p-6 rounded-2xl shadow-lg" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <h3 class="text-4xl font-bold gold-text mb-2">500+</h3>
+                        <p class="font-semibold text-lg">Projects Completed</p>
+                    </div>
+                    <div class="stat-card bg-white/90 p-6 rounded-2xl shadow-lg" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <h3 class="text-4xl font-bold gold-text mb-2">150+</h3>
+                        <p class="font-semibold text-lg">Happy Clients</p>
+                    </div>
+                    <div class="stat-card bg-white/90 p-6 rounded-2xl shadow-lg" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <h3 class="text-4xl font-bold gold-text mb-2">100+</h3>
+                        <p class="font-semibold text-lg">Unique Designs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="process">
+            <div class="proc reveal" data-aos="fade-up">
+                <h3>Design Consultation</h3>
+                <p style="color:var(--muted)">We discuss style, material and inscriptions, then produce a proof.</p>
+            </div>
+            <div class="proc reveal" data-aos="fade-up" data-aos-delay="80">
+                <h3>Fabrication</h3>
+                <p style="color:var(--muted)">Precision cutting and professional engraving for a lasting finish.</p>
+            </div>
+            <div class="proc reveal" data-aos="fade-up" data-aos-delay="160">
+                <h3>Delivery & Installation</h3>
+                <p style="color:var(--muted)">Respectful, clean, and timely installation at site.</p>
+            </div>
+        </section>
+
+        <!-- CTA strip -->
+        <section class="cta-strip" data-aos="fade-up">
+            <div
+                style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:6px 16px">
+                <div>
+                    <h3 style="margin:0">Ready to get started?</h3>
+                    <p style="margin:0;color:var(--muted)">Select a design and request a price through WhatsApp.</p>
+                </div>
+                <div style="display:flex;gap:10px">
+                    <a href="#featured" class="btn-gold">Browse Works</a>
+                    <a href="#contact" class="btn-outline"
+                        style="color:var(--gold);border-color:rgba(255,255,255,0.06)">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact preview -->
+        <section id="contact" style="max-width:1000px;margin:26px auto;padding:10px 18px">
+            <div style="display:grid;grid-template-columns:1fr;gap:12px">
+                <div>
+                    <h4>Get in touch</h4>
+                    <p style="color:var(--muted)">Tap any product's "View on WhatsApp" to request a price. For calls,
+                        tap a phone number.</p>
+                    <p style="margin-top:10px"><strong>Phone:</strong> <a href="tel:08037202816">08037202816</a> • <a
+                            href="tel:08032577031">08032577031</a> • <a href="tel:09064524107">09064524107</a></p>
+                    <p><strong>Email:</strong> <a href="Samsonitemarble62@yahoo.com">Samsonitemarble62@yahoo.com</a></p>
+                </div>
+
+                <div>
+                    <h4>Quick message (opens WhatsApp)</h4>
+                    <form id="quickMsgForm" style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+                        <input id="qname" name="name" placeholder="Your name"
+                            style="padding:10px;border-radius:8px;border:1px solid #e6eef8" required>
+                        <input id="qphone" name="phone" placeholder="Phone (optional)"
+                            style="padding:10px;border-radius:8px;border:1px solid #e6eef8">
+                        <textarea id="qmsg" name="message" placeholder="Message (short)"
+                            style="padding:10px;border-radius:8px;border:1px solid #e6eef8" rows="3"></textarea>
+                        <div style="display:flex;gap:8px"><button type="submit"
+                                style="background:var(--gold);color:var(--bg);padding:10px;border-radius:8px;border:none">Send
+                                on WhatsApp</button><button type="button" id="clearForm"
+                                style="padding:10px;border-radius:8px;border:1px solid #e6eef8">Clear</button></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-grid">
+                <div>
+                    <h4 style="margin-bottom:6px">Samsonite Marble &amp; Granite</h4>
+                    <p style="color:var(--muted);margin:0 0 8px 0">Premium marble &amp; granite memorials, kitchen tops,
+                        altar tables, engraving and bespoke stone furniture. Care and precision in every project.</p>
+                    <div style="margin-top:10px;color:var(--muted)">
+                        <div><strong>Phone:</strong> <a href="tel:08037202816">08037202816</a></div>
+                        <div><strong>Email:</strong> <a
+                                href="Samsonitemarble62@yahoo.com">Samsonitemarble62@yahoo.com</a>
+                        </div>
+                        <div><strong>Address:</strong> 307 aba road rumukrushi bus stop aba road opposite access bank
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="margin-bottom:6px">Quick Links</h4>
+                    <ul style="list-style:none;padding:0;margin:0;color:var(--muted)">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html">shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="margin-bottom:6px">Business Hours</h4>
+                    <p style="color:var(--muted);margin:0">Mon — Sat: 8:00 AM — 6:00 PM</p>
+                    <p style="color:var(--muted);margin:0">Sunday: By appointment</p>
+                    <div style="margin-top:10px;color:var(--muted)">Follow us: Facebook • Instagram • WhatsApp</div>
+                </div>
+            </div>
+
+            <div
+                style="max-width:1200px;margin:18px auto 0 auto;border-top:1px solid rgba(255,255,255,0.04);padding-top:12px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;align-items:center">
+                <div>© <span id="year"></span> Samsonite Marble &amp; Granite. All rights reserved.</div>
+                <div>Privacy • Terms</div>
+            </div>
+        </footer>
+
+        <!-- Floating WhatsApp (Gold) -->
+        <a class="wa-float" id="waFloat"
+            href="#https://wa.me/2348037202816?text=Hello%20i%20will%20like%20to%speak%20the%20Mangement%20of%20Samsonite%20Marble%20Granite%20Company"
+            aria-label="Chat on WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+                <path
+                    d="M20.5 3.5A11.9 11.9 0 0012 0C5.373 0 .5 4.873.5 11.5c0 2.028.536 4.02 1.553 5.77L0 24l6.964-1.79A11.922 11.922 0 0012 23.5c6.627 0 11.5-4.873 11.5-11.5 0-3.073-1.2-5.88-3.0-8.5zM12 21.5c-1.6 0-3.16-.36-4.56-1.05l-.33-.17-4.14 1.06 1.12-3.9-.22-.38A8.8 8.8 0 012.5 11.5C2.5 6.26 6.76 2 12 2s9.5 4.26 9.5 9.5S17.24 21.5 12 21.5z" />
+            </svg>
+            <span style="font-weight:800">Shop on WhatsApp</span>
+        </a>
+
+    </div> <!-- end #app -->
+
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="main.js"></script>
+    <script src="dropdown.js"></script>
+</body>
+
+</html>

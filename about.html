@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMSONITE MARBLE & GRANITE COMPANY</title>
+    <meta name="description"
+        content="Samsonite Marble & Granite — kitchen tops, altar tables, tombstones, engraving and more.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/logooooo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+
+    <!-- AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+            background-color: var(--bg);
+            color: white;
+        }
+
+        .bg-gold {
+            background-color: var(--gold);
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .border-gold {
+            border-color: var(--gold);
+        }
+
+
+
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(197, 161, 0, 0.1) 0%, rgba(11, 18, 32, 0.9) 100%);
+        }
+
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(197, 161, 0, 0.2);
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(197, 161, 0, 0.2);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 25px rgba(197, 161, 0, 0.2);
+        }
+
+        .value-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(197, 161, 0, 0.1);
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 25px rgba(197, 161, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- Header / Navbar -->
+    <header class="bg-[var(--bg)] text-[var(--gold)] sticky z-50
+        ">
+        <div class="nav-inner flex justify-between items-center px-6 py-4">
+            <!-- Brand -->
+            <a href="#" class="flex items-center gap-3 brand" aria-label="Samsonite Marble & Granite">
+                <svg width="44" height="44" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                    <rect width="100" height="100" rx="15" fill="#0b1220" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="30"
+                        font-weight="bold" fill="#D4AF37">SMG</text>
+                </svg>
+                <div class="title text-lg font-semibold">SAMSONITE MARBLE &amp; GRANITE</div>
+            </a>
+
+            <!-- Desktop nav -->
+            <nav class="hidden lg:flex gap-8 items-center text-[var(--gold)] ">
+                <a href="index.html" class="hover:text-white transition">Home</a>
+                <a href="about.html" class="hover:text-white transition">About Us</a>
+                <a href="services.html" class="hover:text-white transition">Services</a>
+
+                <!-- Desktop Shop dropdown -->
+                <div class="relative group">
+                    <button class="flex items-center gap-2 hover:text-white transition">
+                        Shop
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown grid -->
+                    <div class="absolute hidden group-hover:grid grid-cols-4 gap-3 bg-black/95 border border-[var(--gold)] text-[var(--gold)]
+          top-10 right-0 p-4 rounded-xl w-[600px] shadow-lg transition-all duration-200 ease-in-out opacity-0
+          group-hover:opacity-100 group-hover:visible z-50">
+                        <!-- 16 products -->
+                        <a href="kitchen.html" class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">
+                            Kitchen
+                            Top / Bar &
+                            Bank Top Counter
+                        </a>
+                        <a href="altar.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Altar
+                            Table
+                        </a>
+                        <a href="alter rail.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Altar rail
+                        </a>
+                        <a href="lectern.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Lectern / Altar
+                        </a>
+                        <a href="baptismal.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Baptismal
+                            Front
+                        </a>
+                        <a href="pulpit.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Pulpit
+                        </a>
+                        <a href="engraving.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Engraving
+                            and Dedication Stone
+                        </a>
+
+                        <a href="bishop.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Bishop's
+                            Throne
+                        </a>
+                        <a href="dining.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Tables
+
+                        </a>
+                        <a href="staircase.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Staircase
+                        </a>
+                        <a href="conductor.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Conductor's Table
+                        </a>
+                        <a href="granite.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Granite &
+                            Marble Slabs
+                        </a>
+
+                        <a href="tomb.html"
+                            class="hover:bg-[var(--gold)] hover:text-black p-3 rounded transition">Tombstone
+                        </a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="hover:text-white transition">Contact</a>
+            </nav>
+
+            <!-- Right controls -->
+            <div class="flex items-center gap-3">
+                <div class="hidden md:block font-semibold">📞 <a href="tel:08037202816"
+                        class="text-[var(--gold)] hover:text-white transition">08037202816</a></div>
+                <a id="whatsapp-cta" href=""
+                    class="hidden md:inline-block border border-[var(--gold)] px-4 py-2 rounded hover:bg-[var(--gold)] hover:text-black transition">WhatsApp</a>
+
+                <!-- MOBILE hamburger -->
+                <button id="mobileMenuBtn" class="lg:hidden text-[var(--gold)] text-2xl"
+                    aria-label="Open menu">☰</button>
+            </div>
+        </div>
+
+        <!-- MOBILE DRAWER -->
+        <div id="mobileCanvas" class=" lg:hidden fixed top-0 right-[-100%] h-screen w-11/12 sm:w-3/4 bg-black text-[var(--gold)] shadow-lg p-6 z-[60]
+    transition-all duration-300 ease-in-out overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold">Menu</h2>
+                <button id="closeCanvas" class="text-3xl" aria-label="Close menu">&times;</button>
+            </div>
+
+            <nav class="flex flex-col gap-4">
+                <a href="index.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">Home</a>
+                <a href="about.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">About Us</a>
+                <a href="services.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">Services</a>
+
+                <!-- SHOP accordion -->
+                <div class="pt-2">
+                    <button id="mobileShopToggle"
+                        class="w-full flex items-center justify-between py-2 px-1 text-lg font-medium hover:border-[var(--gold)]"
+                        aria-expanded="false">
+                        <span>Shop</span>
+                        <svg id="mobileShopIcon" xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 transform transition-transform" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- SHOP GRID -->
+                    <div id="mobileShopPanel" class="mt-3 max-h-0 overflow-hidden transition-[max-height] duration-300">
+                        <div class="grid grid-cols-2 gap-3">
+                            <!-- 16 products -->
+
+                            <a href="kitchen.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">
+                                Kitchen
+                                Top / Bar &
+                                Bank Top Counter
+                            </a>
+                            <a href="altar.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Altar
+                                Table
+                            </a>
+                            <a href="alter rail.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Altar
+                                rail
+                            </a>
+                            <a href="lectern.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Lectern
+                                / Altar
+                            </a>
+                            <a href="baptismal.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Baptismal
+                                Front
+                            </a>
+                            <a href="pulpit.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Pulpit
+                            </a>
+                            <a href="engraving.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Engraving
+                                and Dedication Stone
+                            </a>
+                            <a href="bishop.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Bishop's
+                                Throne
+                            </a>
+                            <a href="dining.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Tables
+
+                            </a>
+                            <a href="staircase.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Staircase
+                            </a>
+                            <a href="conductor.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Conductor's
+                                Table
+                            </a>
+                            <a href="granite.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3 rounded text-center transition">Granite
+                                &
+                                Marble Slabs
+                            </a>
+
+                            <a href="tomb.html"
+                                class="bg-gray-900 hover:bg-[var(--gold)] hover:text-black p-3  rounded text-center transition">Tombstone
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="block py-2 px-1 text-lg hover:border-[var(--gold)]">Contact</a>
+                    <div class="mt-4 border-t border-gray-800 pt-4">
+                        <a href="tel:08037202816" class="block py-2 text-sm">📞 08037202816</a>
+                        <a href="#" id="whatsapp-cta-mobile"
+                            class="inline-block mt-2 px-4 py-2 border border-[var(--gold)] rounded hover:bg-[var(--gold)] hover:text-black">
+                            WhatsApp
+                        </a>
+                    </div>
+            </nav>
+        </div>
+
+        <!-- Overlay -->
+        <div id="overlay"
+            class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 z-[55]">
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main style="background-color: #0b1220;">
+        <!-- ABOUT PAGE CONTENT -->
+        <section id="about-content" class="hidden">
+            <!-- Hero Section -->
+            <section class="relative mt-20 bg-cover bg-center h-[70vh] flex items-center justify-center gradient-bg">
+                <div class="absolute inset-0 bg-gradient-to-r from-yellow-600/70 to-black/70"></div>
+                <div class="relative z-10 text-center text-white px-4 max-w-4xl" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">About Our Company</h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto">
+                        Excellence in Marble, Granite, and Stone Craftsmanship Since 2009
+                    </p>
+                </div>
+
+                <!-- Animated SVG Background -->
+                <svg class="absolute bottom-0 left-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="fill-current text-[var(--gold)]"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="fill-current text-[var(--gold)]"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="fill-current text-[var(--gold)]"></path>
+                </svg>
+            </section>
+
+
+
+            <!-- Executive Summary Section -->
+            <section class="py-16 px-6 bg-black/50">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Executive
+                        Summary</h2>
+                    <div class="bg-gold/10 p-8 rounded-2xl border border-gold/20" data-aos="fade-up">
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            Samosnite Marble & Granite Limited is a leading Nigerian company specializing in the
+                            importation, fabrication, supply, and installation of premium marble, granite, and
+                            natural stone surfaces. Established in 2009 with headquarter at 309c Aba Road, Port
+                            Harcourt, Rivers State, the company has built a strong reputation for quality,
+                            reliability, and craftsmanship in marble and granite projects across residential,
+                            commercial, and hospitality sectors. Samsonite services and product deliveries has
+                            moved a step forward in reducing critical environmental impact emanating from
+                            energies, waste, resources, people and communities.
+                        </p>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            Over the past 16 years of operating, Samsonite has demonstrated consistent growth,
+                            recording an estimated annual turnover of 35,000 USD and a net profit margin of
+                            about 30%. The company has successfully executed numerous large-scale projects
+                            for construction firms, real estate developers, hotels, interior designers, religious
+                            bodies, and high-end homeowners across Nigeria.
+                        </p>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            With the increase demands for durable, aesthetic, and high-quality marble finishes in
+                            the construction and real estate markets—especially across the South-South and
+                            South-East regions—the company intends to expand its footprint by upgrading and
+                            expanding its four existing outlets among others things.
+                        </p>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            To finance this expansion and upgrade, Samsonite Marble & Granite Limited is
+                            seeking an investment loan of ¥200 million ($135,000 USD), with a 1-year
+                            moratorium and a 3-year payback period, at an interest rate of 3% per annum. The
+                            proposed investment will fund showroom and workshop setups, machinery
+                            acquisition, stock procurement, logistics, marketing, and working capital.
+                        </p>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            The expansion is projected to deliver an internal rate of return (IRR) exceeding 35%
+                            and achieve full payback within three years, supported by robust market demand,
+                            proven management expertise, and established brand trust.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Competitive Landscape Section -->
+            <section class="py-16 px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">
+                        Competitive Landscape</h2>
+                    <div class="bg-gold/10 p-8 rounded-2xl border border-gold/20" data-aos="fade-up">
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            Competitors include local dealers and regional suppliers with varying levels of operational
+                            sophistication.
+                            Samsonite distinguishes itself through its reliable sourcing, fabrication precision,
+                            competitive pricing,
+                            and excellent after-sales service.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Company Story -->
+            <section class="py-16 px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div data-aos="fade-right">
+                            <h2 class="text-3xl md:text-4xl font-bold text-gold mb-6">Our Story</h2>
+                            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                                Samosnite Marble & Granite Limited was incorporated in 2009 in Port Harcourt, Rivers
+                                State. The company
+                                specializes in the importation, sales, fabrication, and installation of marble, granite,
+                                and other
+                                natural stones. Over the years, Samosnite has established itself as a key player in
+                                Nigeria's natural
+                                stone industry, known for its commitment to product quality, precision workmanship, and
+                                excellent
+                                customer service.
+                            </p>
+                            <p class="text-gray-300 text-lg leading-relaxed">
+                                Having been in operations for over 16 years in the industry and with experiences still
+                                counting,
+                                Samsonite has been able to establish a strong supplier network base with reliable
+                                international
+                                partners. Equipped with skilled workforce and highly proficient with the use of modern
+                                fabrication
+                                technology, offering highly rated services with full compliance to standard in the
+                                industry, which over
+                                the years has boosted a high customer demand for our products and services.
+                            </p>
+                        </div>
+                        <div data-aos="fade-left" class="relative">
+                            <div class="bg-gold/10 p-8 rounded-2xl border border-gold/20">
+                                <svg class="w-24 h-24 text-gold mx-auto mb-6" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <h3 class="text-2xl font-bold text-gold mb-4 text-center">Our Achievements</h3>
+                                <p class="text-gray-300 text-center">
+                                    Samsonite's proven track records of products and service delivery with major real
+                                    estate, construction
+                                    projects with both private and public sectors with cutting edge deliveries attest to
+                                    our expertise in
+                                    the marble and granite related services industry across the 36 states in Nigeria.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission & Vision -->
+            <section class="py-16 px-6 bg-black/50">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div data-aos="fade-right" class="bg-gold/10 p-8 rounded-2xl border border-gold/20">
+                            <div class="flex items-center mb-6">
+                                <svg class="w-10 h-10 text-gold mr-4" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M19.4 15C19.2669 15.4064 19.1338 15.8128 19.0007 16.2192C18.6123 17.406 18.2239 18.5928 17.8355 19.7796C17.7024 20.186 17.5693 20.5924 17.4362 21"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M4.60078 15C4.73388 15.4064 4.86698 15.8128 5.00008 16.2192C5.38848 17.406 5.77688 18.5928 6.16528 19.7796C6.29838 20.186 6.43148 20.5924 6.56458 21"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M17.4362 3C17.5693 3.4064 17.7024 3.8128 17.8355 4.2192C18.2239 5.406 18.6123 6.5928 19.0007 7.7796C19.1338 8.186 19.2669 8.5924 19.4 9"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.56458 3C6.43148 3.4064 6.29838 3.8128 6.16528 4.2192C5.77688 5.406 5.38848 6.5928 5.00008 7.7796C4.86698 8.186 4.73388 8.5924 4.60078 9"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <h3 class="text-3xl font-bold text-gold">Our Vision</h3>
+                            </div>
+                            <p class="text-gray-300 text-lg leading-relaxed">
+                                To be the foremost provider of high-quality marble and granite solutions in West Africa,
+                                delivering
+                                elegance, durability, and value to every project.
+                            </p>
+                        </div>
+                        <div data-aos="fade-left" class="bg-gold/10 p-8 rounded-2xl border border-gold/20">
+                            <div class="flex items-center mb-6">
+                                <svg class="w-10 h-10 text-gold mr-4" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <h3 class="text-3xl font-bold text-gold">Our Mission</h3>
+                            </div>
+                            <p class="text-gray-300 text-lg leading-relaxed">
+                                To deliver world-class marble and granite products through continuous innovation,
+                                sustainable sourcing,
+                                and unmatched installation expertise.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Core Values -->
+            <section class="py-16 px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Our Core
+                        Values</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="value-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Integrity</h3>
+                            <p class="text-gray-300 text-center">Upholding honesty and professionalism in all dealings.
+                            </p>
+                        </div>
+                        <div class="value-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.752 11.168L10.42 6.83597C10.2348 6.65072 10.0005 6.52246 9.74414 6.46597C9.48782 6.40948 9.22006 6.42719 8.97314 6.51697C8.72623 6.60674 8.51028 6.76495 8.35014 6.9724C8.19 7.17985 8.09242 7.42813 8.069 7.68897L7.5 14.689C7.48355 14.8765 7.5119 15.0653 7.58259 15.2394C7.65328 15.4134 7.76431 15.5679 7.90675 15.6903C8.04919 15.8127 8.21909 15.8995 8.40271 15.9434C8.58633 15.9873 8.77861 15.9871 8.96214 15.943L15.962 14.443C16.2231 14.3813 16.458 14.2363 16.6324 14.0291C16.8069 13.8219 16.9114 13.5635 16.9305 13.2912C16.9496 13.0189 16.8823 12.7473 16.7385 12.5173C16.5946 12.2873 16.3818 12.1112 16.131 12.015L14.752 11.168Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Quality</h3>
+                            <p class="text-gray-300 text-center">Consistent delivery of premium materials and superior
+                                finishes.</p>
+                        </div>
+                        <div class="value-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Innovation</h3>
+                            <p class="text-gray-300 text-center">Adopting new technologies in fabrication and
+                                installation.</p>
+                        </div>
+                        <div class="value-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Customer Focus</h3>
+                            <p class="text-gray-300 text-center">Building lasting relationships through personalized
+                                service.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market Analysis Section -->
+            <section class="py-16 px-6 bg-black/50">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Market
+                        Analysis</h2>
+
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div data-aos="fade-right">
+                            <h3 class="text-2xl font-bold text-gold mb-6">Industry Overview</h3>
+                            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                                Nigeria's marble and granite industry has witnessed significant growth due to the
+                                expansion of the
+                                construction, real estate, and hospitality sectors. The rising demand for luxury
+                                finishes, increased
+                                urbanization, and the emergence of new housing estates have fueled consumption of stone
+                                materials.
+                            </p>
+                            <p class="text-gray-300 text-lg leading-relaxed">
+                                The Nigerian Bureau of Statistics (NBS) projects construction sector growth at over 10%
+                                annually, with
+                                luxury building materials like marble and granite accounting for approximately N50
+                                billion (about
+                                35,000,000 USD) of the market share. Samsonite is well-positioned to tap into this
+                                growth, leveraging
+                                its decade-long operational success and brand equity.
+                            </p>
+                        </div>
+
+                        <div data-aos="fade-left">
+                            <h3 class="text-2xl font-bold text-gold mb-6">Market Trends</h3>
+                            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                                There is a growing demand for imported natural stones due to superior quality, this has
+                                increased the
+                                preference for marble and granite over tiles and ceramics. Couple with the rising
+                                investments in
+                                commercial buildings, hotels, and estates, this has led to a paradigm shift toward
+                                aesthetic interior
+                                and exterior finishes.
+                            </p>
+
+                            <h3 class="text-2xl font-bold text-gold mb-6">Target Market Segments</h3>
+                            <ul class="text-gray-300 text-lg space-y-3">
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span><strong>Construction Companies:</strong> Bulk buyers for residential and
+                                        commercial
+                                        projects</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span><strong>Real Estate Developers:</strong> Frequent demand for premium interior
+                                        finishing</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span><strong>Hospitality Industry:</strong> High demand for luxury aesthetics in
+                                        hotels and
+                                        resorts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span><strong>Interior Designers:</strong> Regular clients for custom
+                                        projects</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span><strong>Private Homeowners:</strong> Growing interest in high-end home
+                                        finishes</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expansion Strategy Section -->
+            <section class="py-16 px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Expansion
+                        Strategy
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div data-aos="fade-right">
+                            <h3 class="text-2xl font-bold text-gold mb-6">Expansion Rationale</h3>
+                            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                                The proposed expansion and upgrade in Port Harcourt (Our Head office) Uyo, Eneka, and
+                                Bayelsa States is
+                                strategically motivated by:
+                            </p>
+                            <ul class="text-gray-300 text-lg space-y-3 mb-6">
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>Increasing regional construction and real estate activities</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>Proximity to key project sites and clients</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>Lower logistics costs and faster delivery times</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>Opportunities for strategic partnerships with regional contractors</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>Strong purchasing power and construction growth in the South-South and
+                                        South-East zones</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div data-aos="fade-left">
+                            <h3 class="text-2xl font-bold text-gold mb-6">Expansion Scope</h3>
+                            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                                Each outlet will include:
+                            </p>
+                            <ul class="text-gray-300 text-lg space-y-3">
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>A modern showroom showcasing marble and granite collections</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>A fabrication and polishing workshop equipped with cutting-edge tools</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>A storage facility for raw and finished products</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>Office space for sales and project management staff</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-gold mr-2">•</span>
+                                    <span>CCTV installation for additional monitoring of business activities</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-12" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold text-gold mb-6 text-center">Implementation Timeline</h3>
+                        <div class="bg-gold/10 p-8 rounded-2xl border border-gold/20">
+                            <div class="grid md:grid-cols-4 gap-6 text-center">
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Months 1-3</h4>
+                                    <p class="text-gray-300">Project Planning & Additional Site Acquisition</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Months 4-8</h4>
+                                    <p class="text-gray-300">Construction, Upgrade & Setup</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Months 9-11</h4>
+                                    <p class="text-gray-300">Equipment Installation & Staffing</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Month 12</h4>
+                                    <p class="text-gray-300">Marketing Launch & Operations Commencement</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements / Milestones -->
+            <section class="py-16 px-6 bg-gold text-black">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Our Achievements</h2>
+                    <div class="grid md:grid-cols-4 gap-8 text-center">
+                        <div class="stat-card bg-white/90 p-6 rounded-2xl shadow-lg" data-aos="fade-up">
+                            <h3 class="text-4xl font-bold gold-text mb-2 counter" data-target="500">0</h3>
+                            <p class="font-semibold text-lg">Projects Completed</p>
+                        </div>
+                        <div class="stat-card bg-white/90 p-6 rounded-2xl shadow-lg" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <h3 class="text-4xl font-bold gold-text mb-2 counter" data-target="16">0</h3>
+                            <p class="font-semibold text-lg">Years Experience</p>
+                        </div>
+                        <div class="stat-card bg-white/90 p-6 rounded-2xl shadow-lg" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <h3 class="text-4xl font-bold gold-text mb-2 counter" data-target="150">0</h3>
+                            <p class="font-semibold text-lg">Happy Clients</p>
+                        </div>
+                        <div class="stat-card bg-white/90 p-6 rounded-2xl shadow-lg" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <h3 class="text-4xl font-bold gold-text mb-2 counter" data-target="100">0</h3>
+                            <p class="font-semibold text-lg">Unique Designs</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="py-16 px-6 bg-black/50">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Meet Our
+                        Leadership
+                        Team</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20 text-center" data-aos="zoom-in">
+                            <div
+                                class="w-32 h-32 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-16 h-16 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Idaha Samson</h3>
+                            <p class="text-gold">Managing Director/CEO</p>
+                        </div>
+                        <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20 text-center" data-aos="zoom-in"
+                            data-aos-delay="100">
+                            <div
+                                class="w-32 h-32 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-16 h-16 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Operations Manager</h3>
+                            <p class="text-gold">Supervises installation and fabrication</p>
+                        </div>
+                        <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20 text-center" data-aos="zoom-in"
+                            data-aos-delay="200">
+                            <div
+                                class="w-32 h-32 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-16 h-16 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Finance Officer</h3>
+                            <p class="text-gold">Handles financial management</p>
+                        </div>
+                        <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20 text-center" data-aos="zoom-in"
+                            data-aos-delay="300">
+                            <div
+                                class="w-32 h-32 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-16 h-16 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M22 16.92V19.92C22 20.52 21.56 21 21 21H3C2.44 21 2 20.52 2 19.92V16.92C2 16.32 2.44 15.84 3 15.84H21C21.56 15.84 22 16.32 22 16.92Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M15 5H9V15.84H15V5Z" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7 5H4V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M17 5H20V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Marketing Manager</h3>
+                            <p class="text-gold">Coordinates sales campaigns</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- SERVICES PAGE CONTENT -->
+        <section id="services-content" class="">
+            <!-- Hero Section -->
+            <section
+                class="relative mt-20 bg-gradient-to-r from-black via-gray-900 to-yellow-600 text-white py-20 text-center">
+                <div class="absolute inset-0 bg-black/50"></div>
+                <div class="relative z-10 max-w-4xl mx-auto px-4" data-aos="fade-up">
+
+                    <p class="text-lg md:text-xl mb-8">
+                        Samsonite Marble & Granite Company provides end-to-end stone services from initial consultation
+                        to final
+                        installation. Our expertise covers an array of stone applications with emphasis on accurate
+                        templating,
+                        precision fabrication and professional site installations.
+                    </p>
+                    <div class="bg-gold/20 p-6 rounded-2xl border border-gold/30">
+                        <p class="text-lg">
+                            Our workshop uses modern CNC cutting and polishing equipment combined with skilled
+                            hand-finishing to
+                            ensure each project meets the highest standards.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Animated SVG Background -->
+                <svg class="absolute bottom-0 left-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="fill-current text-[var(--gold)]"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6 31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="fill-current text-[var(--gold)]"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="fill-current text-[var(--gold)]"></path>
+                </svg>
+            </section>
+
+
+            <!-- Add this after the Hero  -->
+            <section class="py-16 px-6 bg-black/50">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Executive
+                        Summary</h2>
+                    <div class="bg-gold/10 p-8 rounded-2xl border border-gold/20" data-aos="fade-up">
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            Samosnite Marble & Granite Limited is a leading Nigerian company specializing in the
+                            importation, fabrication, supply, and installation of premium marble, granite, and
+                            natural stone surfaces. Established in 2009 with headquarter at 309c Aba Road, Port
+                            Harcourt, Rivers State, the company has built a strong reputation for quality,
+                            reliability, and craftsmanship in marble and granite projects across residential,
+                            commercial, and hospitality sectors.
+                        </p>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            Over the past 16 years of operating, Samsonite has demonstrated consistent growth,
+                            recording an estimated annual turnover of 35,000 USD and a net profit margin of
+                            about 30%. The company has successfully executed numerous large-scale projects
+                            for construction firms, real estate developers, hotels, interior designers, religious
+                            bodies, and high-end homeowners across Nigeria.
+                        </p>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            With the increase demands for durable, aesthetic, and high-quality marble finishes in
+                            the construction and real estate markets—especially across the South-South and
+                            South-East regions—the company intends to expand its footprint by upgrading and
+                            expanding its four existing outlets among others things.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add this to the Market Analysis section -->
+            <div class="mt-12" data-aos="fade-up">
+                <h3 class="text-2xl font-bold text-gold mb-6 text-center">Competitive Landscape</h3>
+                <p class="text-gray-300 text-lg leading-relaxed max-w-6xl mx-auto">
+                    Competitors include local dealers and regional suppliers with varying levels of operational
+                    sophistication.
+                    Samsonite distinguishes itself through its reliable sourcing, fabrication precision, competitive
+                    pricing,
+                    and excellent after-sales service.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <section class="py-16 px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">What We
+                        Offer</h2>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Service Card -->
+                        <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 9H21M7 15H11M15 15H17M6 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V6C20 5.46957 19.7893 4.96086 19.4142 4.58579C19.0391 4.21071 18.5304 4 18 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Importation & Sales</h3>
+                            <p class="text-gray-300 text-center">Importation and sales of marble, granite, quartz, and
+                                engineered
+                                stones from reliable international partners.</p>
+                        </div>
+
+                        <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 21.9999 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Fabrication & Customization</h3>
+                            <p class="text-gray-300 text-center">Fabrication and customization of counter-tops, tiles,
+                                stairs, wall
+                                panels, and bespoke stone furniture.</p>
+                        </div>
+
+                        <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Church & Altar Works</h3>
+                            <p class="text-gray-300 text-center">Expertly crafted Bishop thrones, conductor stands,
+                                altar tables,
+                                pulpits, and baptismal fronts.</p>
+                        </div>
+
+                        <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 9H21M7 15H11M15 15H17M6 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V6C20 5.46957 19.7893 4.96086 19.4142 4.58579C19.0391 4.21071 18.5304 4 18 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Kitchen & Bar Tops</h3>
+                            <p class="text-gray-300 text-center">Design and installation of elegant kitchen countertops
+                                and bar
+                                counters made from premium marble and granite.</p>
+                        </div>
+
+                        <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="400">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Memorials & Tombstones</h3>
+                            <p class="text-gray-300 text-center">Beautifully carved tombstones and memorials designed to
+                                reflect
+                                respect and remembrance.</p>
+                        </div>
+
+                        <div class="service-card bg-gold/5 p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="500">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 9H21M7 15H11M15 15H17M6 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V6C20 5.46957 19.7893 4.96086 19.4142 4.58579C19.0391 4.21071 18.5304 4 18 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 text-center">Flooring & Terrazzo</h3>
+                            <p class="text-gray-300 text-center">Expert terrazzo, palladiana and granite flooring with
+                                unmatched
+                                smoothness and shine for various spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us -->
+            <section class="py-16 px-6 bg-black/50">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Why Choose
+                        Samsonite
+                        Marble & Granite?</h2>
+                    <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-10 text-center" data-aos="fade-up">
+                        Because we don't just work with stone — we shape experiences that last generations. Our
+                        expertise,
+                        integrity, and craftsmanship set us apart in the marble and granite industry.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20 text-center" data-aos="zoom-in">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Quality Craftsmanship</h3>
+                            <p class="text-gray-300">We blend traditional artistry with modern design to achieve perfect
+                                finishing.
+                            </p>
+                        </div>
+                        <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20 text-center" data-aos="zoom-in"
+                            data-aos-delay="100">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Customer Satisfaction</h3>
+                            <p class="text-gray-300">Every project is tailored to exceed your expectations — beauty that
+                                speaks for
+                                itself.</p>
+                        </div>
+                        <div class="bg-gold/10 p-6 rounded-2xl border border-gold/20 text-center" data-aos="zoom-in"
+                            data-aos-delay="200">
+                            <div
+                                class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Timely Delivery</h3>
+                            <p class="text-gray-300">We ensure every job is completed on time with zero compromise in
+                                quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vision & Mission -->
+            <section class="py-16 px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gold mb-12 text-center" data-aos="fade-up">Our Vision
+                        & Mission
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-gold/10 p-8 rounded-2xl border-l-4 border-gold" data-aos="fade-right">
+                            <h3 class="text-2xl font-bold text-gold mb-4">Our Vision</h3>
+                            <p class="text-gray-300 text-lg">
+                                To be the leading name in African marble and granite craftsmanship, known for
+                                transforming spaces with
+                                luxury, strength, and art.
+                            </p>
+                        </div>
+                        <div class="bg-gold/10 p-8 rounded-2xl border-l-4 border-gold" data-aos="fade-left">
+                            <h3 class="text-2xl font-bold text-gold mb-4">Our Mission</h3>
+                            <p class="text-gray-300 text-lg">
+                                To deliver exceptional stonework services that combine innovation, cultural heritage,
+                                and sustainability
+                                — building trust and elegance in every project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact CTA -->
+            <section class="py-16 px-6 bg-gold text-black">
+                <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's Create Something Timeless Together</h2>
+                    <p class="text-lg mb-8">Reach out to us today via WhatsApp to start your dream marble or granite
+                        project.</p>
+                    <a href="https://wa.me/2348037202816" target="_blank"
+                        class="inline-block bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition transform hover:scale-105">
+                        Contact Us on WhatsApp
+                    </a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h4 style="margin-bottom:6px">Samsonite Marble &amp; Granite</h4>
+                <p style="color:var(--muted);margin:0 0 8px 0">Premium marble &amp; granite memorials, kitchen tops,
+                    altar tables, engraving and bespoke stone furniture. Care and precision in every project.</p>
+                <div style="margin-top:10px;color:var(--muted)">
+                    <div><strong>Phone:</strong> <a href="tel:08037202816">08037202816</a></div>
+                    <div><strong>Email:</strong> <a
+                            href="mailto:Samsonitemarble62@yahoo.com">Samsonitemarble62@yahoo.com</a>
+                    </div>
+                    <div><strong>Address:</strong> 307 aba road rumukrushi bus stop aba road opposite access bank</div>
+                </div>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom:6px">Quick Links</h4>
+                <ul style="list-style:none;padding:0;margin:0;color:var(--muted)">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html">shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom:6px">Business Hours</h4>
+                <p style="color:var(--muted);margin:0">Mon — Sat: 8:00 AM — 6:00 PM</p>
+                <p style="color:var(--muted);margin:0">Sunday: By appointment</p>
+                <div style="margin-top:10px;color:var(--muted)">Follow us: Facebook • Instagram • WhatsApp</div>
+            </div>
+        </div>
+
+        <div
+            style="max-width:1200px;margin:18px auto 0 auto;border-top:1px solid rgba(255,255,255,0.04);padding-top:12px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;align-items:center">
+            <div>© <span id="year"></span> Samsonite Marble &amp; Granite. All rights reserved.</div>
+            <div>Privacy • Terms</div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp (Gold) -->
+    <a class="wa-float" id="waFloat"
+        href="#https://wa.me/2348037202816?text=Hello%20i%20will%20like%20to%speak%20the%20Mangement%20of%20Samsonite%20Marble%20Granite%20Company"
+        aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M20.5 3.5A11.9 11.9 0 0012 0C5.373 0 .5 4.873.5 11.5c0 2.028.536 4.02 1.553 5.77L0 24l6.964-1.79A11.922 11.922 0 0012 23.5c6.627 0 11.5-4.873 11.5-11.5 0-3.073-1.2-5.88-3.0-8.5zM12 21.5c-1.6 0-3.16-.36-4.56-1.05l-.33-.17-4.14 1.06 1.12-3.9-.22-.38A8.8 8.8 0 012.5 11.5C2.5 6.26 6.76 2 12 2s9.5 4.26 9.5 9.5S17.24 21.5 12 21.5z" />
+        </svg>
+        <span style="font-weight:800">Shop on WhatsApp</span>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Simple page routing for demo
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check current page
+            const path = window.location.pathname;
+            const page = path.split('/').pop();
+
+            if (page === 'about.html') {
+                document.getElementById('about-content').classList.remove('hidden');
+            } else if (page === 'services.html') {
+                document.getElementById('services-content').classList.remove('hidden');
+            } else {
+                // Default to about page for demo
+                document.getElementById('about-content').classList.remove('hidden');
+            }
+
+            // Counter animation
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                // Start counter when element is in viewport
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateCount();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+
+                observer.observe(counter);
+            });
+
+            // Mobile menu functionality
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileCanvas = document.getElementById('mobileCanvas');
+            const closeCanvas = document.getElementById('closeCanvas');
+            const overlay = document.getElementById('overlay');
+            const mobileShopToggle = document.getElementById('mobileShopToggle');
+            const mobileShopPanel = document.getElementById('mobileShopPanel');
+            const mobileShopIcon = document.getElementById('mobileShopIcon');
+
+            function openMobileMenu() {
+                mobileCanvas.style.right = '0';
+                overlay.style.opacity = '0.7';
+                overlay.style.pointerEvents = 'auto';
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMobileMenu() {
+                mobileCanvas.style.right = '-100%';
+                overlay.style.opacity = '0';
+                overlay.style.pointerEvents = 'none';
+                document.body.style.overflow = 'auto';
+                // Close shop panel when closing menu
+                mobileShopPanel.style.maxHeight = '0';
+                mobileShopIcon.style.transform = 'rotate(0deg)';
+                mobileShopToggle.setAttribute('aria-expanded', 'false');
+            }
+
+            mobileMenuBtn.addEventListener('click', openMobileMenu);
+            closeCanvas.addEventListener('click', closeMobileMenu);
+            overlay.addEventListener('click', closeMobileMenu);
+
+            // Mobile shop toggle
+            mobileShopToggle.addEventListener('click', () => {
+                const isExpanded = mobileShopToggle.getAttribute('aria-expanded') === 'true';
+
+                if (isExpanded) {
+                    mobileShopPanel.style.maxHeight = '0';
+                    mobileShopIcon.style.transform = 'rotate(0deg)';
+                    mobileShopToggle.setAttribute('aria-expanded', 'false');
+                } else {
+                    mobileShopPanel.style.maxHeight = mobileShopPanel.scrollHeight + 'px';
+                    mobileShopIcon.style.transform = 'rotate(180deg)';
+                    mobileShopToggle.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
