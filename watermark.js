@@ -5,13 +5,12 @@ import chalk from "chalk";
 
 const inputFolder = "img";
 const outputFolder = "watermarked_img";
-const MAX_WIDTH = 2500;
-const QUALITY = 85;
+const QUALITY = 80; // slightly smaller for faster loading
 
 await fs.ensureDir(outputFolder);
 
-async function makeWatermark(baseWidth, baseHeight) {
-  // Initial size: 55% of width, capped by height
+// ✅ Create watermark (static size, bold, white text, black outline)
+async function makeWatermark() {
   const wmWidth = 800;
   const wmHeight = 400;
 
@@ -21,79 +20,81 @@ async function makeWatermark(baseWidth, baseHeight) {
       .text {
         font-family: Arial, sans-serif;
         font-weight: 900;
-        font-size: ${Math.round(wmWidth / 10)}px;
+        font-size: 75px;
         text-anchor: middle;
         dominant-baseline: middle;
         fill: white;
-        fill-opacity: 0.9;
+        fill-opacity: 1;
         stroke: black;
-        stroke-width: 8px;
-        stroke-opacity: 1;
+        stroke-width: 10px;
         paint-order: stroke;
       }
     </style>
     <text x="50%" y="40%" class="text">Samsonite Marble</text>
     <text x="50%" y="75%" class="text">Granite Company</text>
   </svg>`;
+
   return Buffer.from(svg);
 }
 
 async function processImage(filename) {
+  // Skip non-image files
   if (!/\.(jpe?g|png|webp)$/i.test(filename)) return;
-  const input = path.join(inputFolder, filename);
-  const output = path.join(outputFolder, path.parse(filename).name + ".jpg");
+
+  const inputPath = path.join(inputFolder, filename);
+  const ext = path.extname(filename).toLowerCase();
+  const baseName = path.parse(filename).name;
+  const outputPath = path.join(outputFolder, `${baseName}.webp`);
 
   try {
-    const img = sharp(input).rotate();
+    const img = sharp(inputPath).rotate(); // auto-orient
     const meta = await img.metadata();
-    const width = meta.width
+    const width = meta.width;
     const height = meta.height || width;
 
-    const resizedBuffer = await img.resize({ width }).toBuffer();
+    // Read image into buffer
+    const buffer = await img.resize({ width }).toBuffer();
 
-    // Create watermark buffer sized to this image
-    const wmBuf = await makeWatermark(width, height);
-    let rotatedWM = await sharp(wmBuf)
-      .rotate(-35, { background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    // Create watermark
+    let watermark = await makeWatermark();
+
+    // Rotate watermark (optional: set to 0 if you don’t want it slanted)
+    watermark = await sharp(watermark)
+      .rotate(-25, { background: { r: 0, g: 0, b: 0, alpha: 0 } })
       .toBuffer();
 
-    // Ensure watermark fits after rotation
-    const wmMeta = await sharp(rotatedWM).metadata();
-
+    // ✅ Auto-shrink watermark if smaller image
+    const wmMeta = await sharp(watermark).metadata();
     if (wmMeta.width > width || wmMeta.height > height) {
-  const scale = Math.min(width / wmMeta.width, height / wmMeta.height) * 0.7;
-  rotatedWM = await sharp(rotatedWM)
-    .resize({
-      width: Math.floor(wmMeta.width * scale),
-      height: Math.floor(wmMeta.height * scale),
-    })
-    .toBuffer();
-}
+      const scale = Math.min(width / wmMeta.width, height / wmMeta.height) * 0.9;
+      watermark = await sharp(watermark)
+        .resize({
+          width: Math.floor(wmMeta.width * scale),
+          height: Math.floor(wmMeta.height * scale),
+        })
+        .toBuffer();
+    }
 
-    // if (wmMeta.width > width || wmMeta.height > height) {
-    //   const scale = Math.min(width / wmMeta.width, height / wmMeta.height) * 0.8; // 80% safety margin
-    //   rotatedWM = await sharp(rotatedWM)
-    //     .resize({
-    //       width: Math.floor(wmMeta.width * scale),
-    //       height: Math.floor(wmMeta.height * scale),
-    //     })
-    //     .toBuffer();
-    // }
-
-    await sharp(resizedBuffer)
-      .composite([{ input: rotatedWM, gravity: "center", blend: "over" }])
-      .modulate({ brightness: 1.05 })
+    // ✅ Add watermark, optimize, and convert to WEBP
+    await sharp(buffer)
+      .composite([{ input: watermark, gravity: "center", blend: "over" }])
       .withMetadata()
-      .jpeg({ quality: QUALITY, progressive: true, chromaSubsampling: "4:4:4" })
-      .toFile(output);
+      .webp({
+        quality: QUALITY,
+        effort: 6, // balance between speed & quality
+        lossless: false,
+        smartSubsample: true,
+      })
+      .toFile(outputPath);
 
     console.log(chalk.green(`✅ ${filename}`));
-  } catch (e) {
-    console.log(chalk.red(`❌ ${filename}: ${e.message}`));
+  } catch (err) {
+    console.log(chalk.red(`❌ ${filename}: ${err.message}`));
   }
 }
 
+// ✅ Run
 console.log(chalk.cyan(`Processing images from: ${inputFolder}`));
 const files = await fs.readdir(inputFolder);
-for (const f of files) await processImage(f);
-console.log(chalk.greenBright("🎉 All images processed!"));
+for (const file of files) await processImage(file);
+console.log(chalk.greenBright("🎉 All images processed successfully!"));
