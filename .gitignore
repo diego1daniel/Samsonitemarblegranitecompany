@@ -2,5 +2,3 @@ node_modules/
 .venv/
 dist/
 build/
-*.zip
-*.mp4
