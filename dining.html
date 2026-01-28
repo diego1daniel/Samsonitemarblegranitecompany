@@ -258,6 +258,15 @@
                 <div class="prod-card"><img class="prod-img grid-img" src="watermarked_img/taircase6.webp"
                         alt="Dining Table 7"></div>
             </div>
+            <!-- Video Wrapper -->
+                        <div class="flex justify-center mt-6">
+                            <div class="w-full max-w-3xl">
+                                <video id="processVideo" class="w-full h-auto" muted playsinline preload="none" controls
+                                    data-src="img/center100.mp4">
+                            
+                                </video>
+                            </div>
+                        </div>
             <div class="mt-6 text-center">
                 <a href="https://wa.me/2348037202816?text=Hello%20Samsonite%20Marble%20%26%20Granite%2C%20I%27m%20interested%20in%20Dining%20Tables."
                     class="btn-gold">Order on WhatsApp</a>
@@ -343,6 +352,60 @@
 
     <script src="main.js"></script>
     <script src="dropdown.js"></script>
+     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const video = document.getElementById("processVideo");
+            const toggleBtn = document.getElementById("toggleAwardsBtn");
+            const awardsSection = document.getElementById("awardsSection");
+            const arrowIcon = document.getElementById("arrowIcon");
+
+            // Lazy load video
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            if (!video.src) {
+                                video.src = video.dataset.src;
+                                video.load();
+                            }
+                            video.play().catch(() => { });
+                        }
+                    });
+                },
+                { threshold: 0.4 }
+            );
+
+            observer.observe(video);
+
+            // Enable sound on click
+            const enableSound = () => {
+                video.muted = false;
+                document.removeEventListener("click", enableSound);
+                document.removeEventListener("touchstart", enableSound);
+            };
+            document.addEventListener("click", enableSound);
+            document.addEventListener("touchstart", enableSound);
+
+            // Toggle awards dropdown
+            toggleBtn.addEventListener("click", () => {
+                const isHidden = awardsSection.classList.contains("hidden");
+
+                awardsSection.classList.toggle("hidden");
+
+                // Add smooth transition (optional fade/slide)
+                if (isHidden) {
+                    awardsSection.classList.add("animate-fadeIn");
+                    arrowIcon.classList.add("rotate-180");
+                    toggleBtn.innerHTML = `See Less <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-300 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>`;
+                } else {
+                    arrowIcon.classList.remove("rotate-180");
+                    toggleBtn.innerHTML = `See Other Products <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>`;
+                }
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
